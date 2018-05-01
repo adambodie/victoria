@@ -1,0 +1,79 @@
+body {
+	background-color: #F5F4F0;
+}
+
+#banner {
+	width: 100%;
+	position: relative;
+}
+
+.title {
+    display: none;
+}
+
+.nav-item {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.buttons div {
+	width: 75px;
+	height: 75px;
+	border-radius: 100%;
+	margin: 20px;
+}
+.buttons div:first-child {
+	background-color: gray;
+}
+
+.buttons div:nth-child(2) {
+	background-color: gray;
+}
+
+.buttons div:nth-child(3) {
+	background-color: gray;
+}
+
+
+.content-parent {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.content div {
+	width: 500px;
+	height: 250px;
+	background-color: gray;
+	margin: 15px;
+}
+
+@media screen and (min-width: 480px) {
+	.title {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		display: block;
+	}
+
+	.title h1 {
+	    text-align: center;
+		font-size: 3em;
+	}
+	
+	.buttons div {
+		width: 100px;
+		height: 100px;
+	}	
+}
