@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import PhotoList from './PhotoList';
+import '../Slick.css';
 
 function formUrl(photoset_id, per_page) {
 	return `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0c3f8d32a28de8434240115b85a28499&photoset_id=${photoset_id}&user_id=8994820%40N07&extras=tags&per_page=${per_page}&format=json&nojsoncallback=1`;
@@ -12,8 +13,7 @@ export default class Carousel extends Component {
       super(props);
       this.state = {
         photographs: [],
-        per_page: this.props.page,
-        title: this.props.title,
+        per_page: this.props.page
       };
     }
 

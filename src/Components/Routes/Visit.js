@@ -12,8 +12,8 @@ export default class Visit extends Component {
 					<Tab>Part 2</Tab>
 				</TabList>
 				<TabPanel>
-					<h1>Part 1</h1>
-					<Carousel />
+					<h1>Strolling Around Port Angeles Admiring the Artwork</h1>
+					<Carousel id={'72157696418888385'} />
 				</TabPanel>
 				<TabPanel>
 					<h1>Part 2</h1>

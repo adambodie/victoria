@@ -1,19 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from "react-router-dom";
 
-import Banner from '../Banner';
-import Buttons from '../Buttons';
-import Content from '../Content';
-
-
-
-export default class Home extends Component {
-  render() {
-	return (
-		<div>
-		<Banner/>
-		<Buttons/>
-		<Content/>
+const Home = () => (
+  <div>
+    <div className="buttons">
+		<div><Link to='/visit'>A</Link></div>
+		<div><Link to='/eat'>B</Link></div>
+		<div><Link to='/learn'>C</Link></div>
 	</div>
-	);
-	}
-}
+	<div className="content-parent">
+		<div className="content">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</div>
+);
+
+export default Home;

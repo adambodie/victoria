@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default class Header extends Component {
   render() {
 	return (
+	<div>
 		<div className="header">
 			<nav className="navbar navbar-expand-md navbar-dark bg-dark">
 				<a className="navbar-brand">Black Ball</a>
@@ -27,6 +28,14 @@ export default class Header extends Component {
 				</ul>
 			</div>
 		</nav>
+	</div>
+	<div>
+		<img src={require('../banner.jpg')} alt="banner" id="banner"/>
+			<div className="title">
+				<h1>Port Angeles to Victoria</h1>
+				<h1>See the Black Ball</h1>
+			</div>
+		</div>
 	</div>
 	);
 	}

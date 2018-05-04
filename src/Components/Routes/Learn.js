@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Banner from '../Banner';
 import test from "../../fact.jpg";
 
 export default class Learn extends Component {
@@ -47,7 +46,6 @@ export default class Learn extends Component {
 		  );
 	return (
 		<div>
-			<Banner />
 			<div className="facts">
 				{listOfFacts}
 			</div>

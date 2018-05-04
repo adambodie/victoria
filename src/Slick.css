@@ -1,0 +1,132 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.carousel {
+  font: 1em/1.5 'Roboto', sans-serif;
+  color: #4c4c4c;
+  margin-top: -35px;
+}
+a {
+  text-decoration: none;
+}
+
+h3, h6 {
+  text-align: center;
+}
+h4 {
+	text-align: center;
+	text-transform:capitalize;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* =================================
+  Layout Styles
+==================================== */
+.title {
+	text-align: center;
+	padding: 10px;
+}
+.fa {
+	position: absolute;
+	top: 50%;
+	font-size: 3em;
+	color: white;
+	&:hover {
+		color: gray;
+	}
+}
+.left {
+	left: 0%;
+
+}
+.right {
+	right: 0%;
+}
+.slick-arrow {
+	display: none!important;
+}
+
+.slick-slide img {
+    margin: 0 auto;
+    max-height: 200px;
+}
+
+.slick-dots {
+	position: relative!important;
+	bottom: 0!important;
+	max-width: 500px;
+	display: block;
+	margin: 0 auto!important;
+	padding: 10px;
+}
+
+.slick-dots li {
+		margin: 0;
+		width: 10px;
+		height: 10px;
+		color: white!important;
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+@media (min-width: 550px) {
+  .slick-slide img {
+      max-height: 340px;
+	}
+	.slick-list {
+		padding: 10px;
+	}
+	.fa {
+		top: 55%;
+	}
+	.left {
+		left: 2.5%;
+	
+	}
+	.right {
+		right: 2.5%;
+	}
+
+}
+
+@media (min-width: 769px) {
+  .main-title {
+    float: left;
+  }
+  .slick-dots {
+  	max-width: 80%;
+	}
+	.slick-list {
+		padding: 10px;
+	}
+	.fa {
+		margin: 20px;
+		top: 60%;
+	}
+
+	.left {
+		left: 5%;
+	
+	}
+	.right {
+		right: 5%;
+	}
+
+  .slick-slide {
+		width: 800px;
+  }
+	.slick-slide img {
+			max-height: 480px;
+		}
+}
