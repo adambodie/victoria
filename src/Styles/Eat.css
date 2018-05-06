@@ -1,0 +1,11 @@
+.restaurant {
+	display: flex;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+.restaurant p {
+	padding: 20px;
+}
+
+

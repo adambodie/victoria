@@ -1,0 +1,109 @@
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+.slide .photo-overlay,
+.slide img {
+	transition: transform .6s ease-out;
+}
+
+.slide .photo-overlay {
+	transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+	transform: translateX(0);
+}
+
+.slide:hover img {
+	transform: translateX(100%); 
+}
+
+h3 {
+	font-size: 1em;
+	line-height: 1.25em;
+	margin-top: .85em;
+	margin-bottom: .5em;
+}
+
+
+.photo-container {
+	text-align: center;
+}
+
+.photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+.photo-container img {
+ 	max-width: 100%;
+}
+.facts {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+/* ---- Photo Overlay ---- */
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex; /* For centering text inside .photo-overlay */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide .photo-overlay {
+	opacity: 1;
+	background: black;
+}
+
+@media (min-width: 480px) {
+	.title {
+		position: absolute;
+		left: 0;
+		top: 100px;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		display: flex; /* For centering text inside .photo-overlay */
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.title h1 {
+	    text-align: center;
+		font-size: 3em;
+	}
+		
+}
+
+
+@media (min-width: 0) and (max-width: 768px) {
+	.photo-container {
+		width: 80%;
+	}
+}
+@media (min-width: 769px) {
+	.photo-container {
+		width: 40%;
+	}
+h3 {
+	font-size: 1.3em;
+}	
+}

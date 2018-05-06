@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import test from "../../fact.jpg";
+import '../../Styles/Transform.css';
 
 export default class Learn extends Component {
 	
@@ -37,7 +37,7 @@ export default class Learn extends Component {
 	  const listOfFacts = this.state.facts.map((fact, index)=>
 				<div className="photo-container" key={ index }>
 					<div className="photo slide">
-						<img src={test} alt="Did You Know?"/>
+						<img src={require('../../fact.jpg')} alt="Did You Know?"/>
 						<div className="photo-overlay">
 							<h3>{fact}</h3> 
 						</div>
