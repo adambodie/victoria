@@ -30,7 +30,7 @@ export default class Header extends Component {
 		</nav>
 	</div>
 	<div>
-		<img src={require('../banner.jpg')} alt="banner" id="banner"/>
+		<img src={require('../Images/banner.jpg')} alt="banner" id="banner"/>
 			<div className="title">
 				<h1>Port Angeles to Victoria</h1>
 				<h1>See the Black Ball</h1>

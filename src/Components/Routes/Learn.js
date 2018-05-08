@@ -34,20 +34,24 @@ export default class Learn extends Component {
 	}
 	
   render() {
+	  
+	  const randomNumber = Math.floor(Math.random() * this.state.facts.length);
 	  const listOfFacts = this.state.facts.map((fact, index)=>
 				<div className="photo-container" key={ index }>
 					<div className="photo slide">
-						<img src={require('../../fact.jpg')} alt="Did You Know?"/>
+						<img src={require('../../Images/fact.jpg')} alt="Did You Know?"/>
 						<div className="photo-overlay">
 							<h3>{fact}</h3> 
 						</div>
 					</div>
 				</div> 
 		  );
+		  
+		const randomFacts = listOfFacts.filter((fact, index) => index === randomNumber );
 	return (
 		<div>
 			<div className="facts">
-				{listOfFacts}
+				{randomFacts}
 			</div>
 		</div>
 	);

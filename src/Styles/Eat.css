@@ -2,10 +2,30 @@
 	display: flex;
 	padding: 20px;
 	flex-wrap: wrap;
+	align-content: flext-start;
+	background-color: gray;
+	margin: 20px;
 }
 
-.restaurant p {
-	padding: 20px;
+.restaurantTitle {
+	width: 100%;
 }
 
 
+.address {
+	background: navy;
+}
+
+.address p {
+	margin-bottom: 0;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media (min-width: 480px) {
+.paragraph {
+	margin-left: 20px;
+	width: 75%;
+}	
+}
