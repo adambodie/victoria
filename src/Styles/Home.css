@@ -1,0 +1,103 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+h3 {
+	font-size: 1.1em;
+	line-height: 1.25em;
+	margin-top: .85em;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+p {
+	font-size: .75em;
+	line-height: 1.4;
+	margin: 0 0 1.5em;
+	font-weight: bold;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.home-container {
+	text-align: center;
+}
+
+.home-photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+.home-photo img {
+ 	max-width: 100%;
+}
+
+/* ---- Photo Overlay ---- */
+
+.home-overlay {
+	color: #fff;
+	background: rgba(0,0,0, 1);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex; /* For centering text inside .photo-overlay */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 150px;
+
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+	.home-container {
+		width: 45%;
+	}
+}
+
+/* ================================= 
+  Photo Overlay Transitions
+==================================== */
+
+
+@media (min-width: 769px) {
+h3 {
+	font-size: 1.3em;
+	line-height: 1.25em;
+	margin-top: .85em;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+	p {
+		font-size: .875em;
+		line-height: 1.4;
+		margin: 0 0 1.5em;
+		font-weight: bold;
+	}
+	.home-overlay {
+		background: rgba(0,0,0, 0);
+		opacity: 0;
+		transition: opacity .5s, background .5s;
+		margin-top: 250px;
+	}
+	.home-overlay:hover {
+		background: rgba(0,0,0, 1);
+		opacity: 1;
+	}
+
+}
+
+

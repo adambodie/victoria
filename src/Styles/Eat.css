@@ -3,8 +3,9 @@
 	padding: 20px;
 	flex-wrap: wrap;
 	align-content: flext-start;
-	background-color: gray;
-	margin: 20px;
+	box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+	background: rgba(0,0,0, 0.1);
+	margin: 50px 20px;
 }
 
 .restaurantTitle {
@@ -13,12 +14,12 @@
 
 
 .address {
-	background: navy;
+	background: #EE3A43;
 }
 
 .address p {
 	margin-bottom: 0;
-	color: white;
+	color: black;
 	font-weight: bold;
 	text-align: center;
 }

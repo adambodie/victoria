@@ -1,6 +1,15 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    opacity: 1;
+    color: black;
+
+}
+
 .carousel {
   font: 1em/1.5 'Roboto', sans-serif;
   color: #4c4c4c;
@@ -32,25 +41,7 @@ li {
 	text-align: center;
 	padding: 10px;
 }
-.fa {
-	position: absolute;
-	top: 50%;
-	font-size: 3em;
-	color: white;
-	&:hover {
-		color: gray;
-	}
-}
-.left {
-	left: 0%;
 
-}
-.right {
-	right: 0%;
-}
-.slick-arrow {
-	display: none!important;
-}
 
 .slick-slide img {
     margin: 0 auto;
@@ -80,24 +71,16 @@ li {
 ==================================== */
 
 
-@media (min-width: 550px) {
+@media (min-width: 480px) {
+
+
+
   .slick-slide img {
       max-height: 340px;
 	}
 	.slick-list {
 		padding: 10px;
 	}
-	.fa {
-		top: 55%;
-	}
-	.left {
-		left: 2.5%;
-	
-	}
-	.right {
-		right: 2.5%;
-	}
-
 }
 
 @media (min-width: 769px) {
@@ -110,23 +93,14 @@ li {
 	.slick-list {
 		padding: 10px;
 	}
-	.fa {
-		margin: 20px;
-		top: 60%;
-	}
-
-	.left {
-		left: 5%;
-	
-	}
-	.right {
-		right: 5%;
-	}
 
   .slick-slide {
 		width: 800px;
   }
 	.slick-slide img {
-			max-height: 480px;
-		}
+		max-height: 480px;
+	}
 }
+
+
+

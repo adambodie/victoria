@@ -25,6 +25,9 @@ export default class Header extends Component {
 					<li className="nav-item">
 						<Link to='/learn'>Learn</Link>
 					</li>
+					<li className="nav-item">
+						<Link to='/buy'>Buy</Link>
+					</li>
 				</ul>
 			</div>
 		</nav>

@@ -8,6 +8,7 @@ import Header from './Components/Header';
 import Home from './Components/Routes/Home';
 import Visit from './Components/Routes/Visit';
 import Learn from './Components/Routes/Learn';
+import Buy from './Components/Routes/Buy';
 import Eat from './Components/Routes/Eat';
 import Footer from './Components/Footer';
 
@@ -21,6 +22,7 @@ class App extends Component {
 				<Route path = "/visit" render={() => <Visit />}/>
 				<Route path = "/eat" render={() => <Eat />}/>
 				<Route path = "/learn" render={() => <Learn />}/>
+				<Route path = "/buy" render={() => <Buy />}/>
 				<Footer/>
 			</div>
       </Router>
