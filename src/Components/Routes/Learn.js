@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../Styles/Transform.css';
+import '../../Styles/Learn.css';
 
 export default class Learn extends Component {
 	
@@ -28,7 +28,6 @@ export default class Learn extends Component {
 				"Due to its climate and location, Sequim, Washington is nicknamed the 'Lavender Capital of North America,' cultivating more Lavender than anywhere outside of France",
 				"Mile Zero of the Trans Canada Highway, which spans from British Columbia to Newfoundland & Labrador, begins in Victoria",
 				"The Strait of Juan de Fuca, known in Canada as the Juan de Fuca Strait, which separates the Olympic Peninsula of Washington State from Vancouver Island of British Columbia, is about 96 miles long",
-				"The international border runs right through the center of the Strait of Juan de Fuca",
 				"Juan de Fuca was a Greek navigator who claimed to be the first non-native to explore the strait, looking for a semi-mythical Strait of Anian that theoretically separated North America from Asia",
 				"Vancouver Island is the largest island on the West Coast of North America, and the largest island in the Pacific Ocean east of New Zealand",
 				"The southern part of Vancouver island is the only part of Western Canada below the 49th parallel",
@@ -42,6 +41,7 @@ export default class Learn extends Component {
 	
 	newFacts() {
 		let randomNumber = Math.floor(Math.random() * this.state.facts.length);
+		alert("New Facts have been loaded");
 		  this.setState(prevState => ({
 			randomArray: [randomNumber, randomNumber, randomNumber, randomNumber]
     }));

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import '../../Styles/Buy.css';
 
 export default class Buy extends Component {
 	
@@ -18,7 +19,7 @@ export default class Buy extends Component {
 	  }
 
 	  handleSubmit(event) {
-		  this.setState({canadianValue: this.state.value * this.state.currency});
+		  this.setState({canadianValue: '$' + (this.state.value * this.state.currency).toFixed(2)});
           event.preventDefault();
 	  }
     componentDidMount() {
@@ -37,21 +38,24 @@ export default class Buy extends Component {
 		render() {
 			return (
 				<div>
-				<h1>Currency Exchange Rate</h1>
-				<div className="currencyRates">
-				<div className="usd">
-					<h1>United States Dollars</h1>
-				<form onSubmit={this.handleSubmit}>
-					<input type="text" value={this.state.value} onChange={this.handleChange} /><br/>
-					<input type="submit" value="Submit" />
-				</form>
+					<h1 className="currency">Currency Exchange Rate</h1>
+					<h6>USD to CAD Exchange rate: {this.state.currency}</h6>
+					<div className="currencyRates">
+						<div className="usd">
+							<h2>United States Dollars</h2>
+							<form className="results" onSubmit={this.handleSubmit}>
+								<input type="text" value={this.state.value} onChange={this.handleChange} /><br/>
+								<input type="submit" value="Submit" />
+							</form>
+						</div>
+						<div className="cad">
+							<h2>Canadian Dollars</h2>
+							<div className="results">
+								<h3>{this.state.canadianValue}</h3>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div className="cad">
-					<h1>Canadian Dollars</h1>
-					<h3>{this.state.canadianValue}</h3>
-				</div>
-				</div>
-			</div>
 			)
 		}
 }

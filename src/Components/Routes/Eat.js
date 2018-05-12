@@ -45,12 +45,26 @@ export default class Eat extends Component {
 						'three': 'For dinner, I again opted for something less traditional than my usual food, so I ordered a Nacho plate with Chili.  The chili, according to the server, was a new recipe. With plenty of meats, beans and spices, it was delicious, which I assured the server it was.  It complemented the Nachos well, which contained cheese, salsa and jalapeños, among other things. The only downside was that I wasn’t able to finish the whole plate, stopping having eaten a good 90%.'
 
 					}
+			},
+			{
+				'title': 'Horse & Cow Bar & Grill',
+				'image': require('../../Images/horse-cow.jpg'),
+				'address': {
+						'one': '536 4th St',
+						'two': 'Bremerton, WA 98337'
+					},
+				'paragraph': {
+					
+						'one': 'With an unexpected trip to Bremerton due to my Waze App suggesting I take the route through Kitsap County rather than US 101 and my desire to see something new and exciting, my plans for the day were completely spontaneous.  Even visiting Bremerton was completely unplanned; only after browing through my phone I settled on visiting the Bremerton Boardwalk.',
+						'two': 'Unsure of where I wanted to eat, and not wanting to walk so much, my first two ideas went south; one place that looked cool was closed on Sundays, another place looked to classy for how I was feeling.  At least the seagulls were able to get a table.  Walking around the area near my car, I settled for a place called the Horse & Cow Bar & Grill, as I didn\'t want to spend too much time walking.',
+						'three': 'Entering the Horse & Cow, I noticed the funky and gritty vibe.  Not super caring of where I sat, I entered the bar and ordered myself a Georgetown Brewing Bodhizafa IPA.  Gotta love that name.  Not the best IPA I\'ve had but nothing wrong with trying a new Seattle beer.  Again, trying to be adventurous and taking advantage of their Sunday Special, I ordered a $6.99 Steak and Fries.  It had been years since I had a steak.  The steak was satisfying, though not particularly superb, I had to teach myself how to properly cut and eat my steak.  I felt a little off before eating, but after lunch, I felt a lot better.  Mission accomplished.'
+					}
 			}
 		];
 		let restaurantReviews = restaurants.map((restaurant, index) => 
 			<div className='restaurant' key={index}>
 					<h2 className="restaurantTitle">{restaurant.title}</h2>
-					<div>
+					<div className="restaurantImage">
 						<img src={restaurant.image} alt={restaurant.title} className="img-fluid"/>
 						<div className="address">
 							<p>{restaurant.address.one}</p>
@@ -65,7 +79,7 @@ export default class Eat extends Component {
 				</div>
 	);
 		return (
-			<div className='eat'>
+			<div>
 				<h1 className='pageTitle'>Restaurant Reviews</h1>
 				{restaurantReviews}
 			</div>

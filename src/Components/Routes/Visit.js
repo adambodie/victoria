@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Carousel from '../Carousel';
 
-
 export default class Visit extends Component {
 
 	render() {

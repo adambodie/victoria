@@ -12,7 +12,10 @@
 	width: 100%;
 }
 
-
+.restaurantImage {
+	display: block;
+	margin: 0 auto;
+}
 .address {
 	background: #EE3A43;
 }
@@ -24,9 +27,17 @@
 	text-align: center;
 }
 
-@media (min-width: 480px) {
 .paragraph {
-	margin-left: 20px;
-	width: 75%;
-}	
+	margin-top: 20px;
+}
+@media (min-width: 480px) {
+	.paragraph {
+		margin-top: 0px;
+		width: 55%;
+	}	
+}
+@media (min-width: 769px) {
+	.paragraph {
+		width: 65%;
+	}	
 }

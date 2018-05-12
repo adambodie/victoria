@@ -3,17 +3,16 @@
 ==================================== */
 
 h3 {
-	font-size: 1.1em;
-	line-height: 1.25em;
-	margin-top: .85em;
+	font-size: 0.8em;
+	line-height: 1.0em;
+	margin-top: 1.0em;
 	margin-bottom: .5em;
 	font-weight: bold;
 }
 p {
-	font-size: .75em;
-	line-height: 1.4;
+	font-size: .6em;
+	line-height: 1.5;
 	margin: 0 0 1.5em;
-	font-weight: bold;
 }
 
 /* ================================= 
@@ -31,9 +30,11 @@ p {
 	line-height: 0;
 	margin-bottom: 2em;
 	overflow: hidden;
+	box-shadow: 4px 4px 8px rgba(0,0,0, 0.5);
 }
 .home-photo img {
  	max-width: 100%;
+ 	
 }
 
 /* ---- Photo Overlay ---- */
@@ -52,7 +53,7 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 150px;
+	margin-top: 50%;
 
 }
 
@@ -73,25 +74,23 @@ p {
 ==================================== */
 
 
-@media (min-width: 769px) {
+@media (min-width: 767px) {
 h3 {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	line-height: 1.25em;
 	margin-top: .85em;
 	margin-bottom: .5em;
 	font-weight: bold;
 }
 	p {
-		font-size: .875em;
+		font-size: 1em;
 		line-height: 1.4;
 		margin: 0 0 1.5em;
-		font-weight: bold;
 	}
 	.home-overlay {
 		background: rgba(0,0,0, 0);
 		opacity: 0;
 		transition: opacity .5s, background .5s;
-		margin-top: 250px;
 	}
 	.home-overlay:hover {
 		background: rgba(0,0,0, 1);

@@ -1,0 +1,57 @@
+.currencyRates {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.usd, .cad {
+	width: 80%;
+	height: 400px;
+	background: rgba(0,0,0, 0.1);
+	margin: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+	box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+}
+.usd h2, .cad h2 {
+	font-size: 1.5em;
+}
+
+.currency {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+.results {
+	height: 200px;
+}
+input[type="text"] {
+	margin-bottom: 30px;
+}
+
+input[type="submit"] {
+	background: black;
+	padding: 20px;
+	color: white;
+}
+
+@media (min-width: 480px) {
+	.usd, .cad {
+		width: 40%;
+	}
+}
+@media (min-width: 769px) {
+	.usd, .cad {
+		width: 45%;
+	}
+	.usd h2, .cad h2 {
+		font-size: 2em;
+	}
+	.currency {
+		font-size: 2.5em;
+	}	
+}
