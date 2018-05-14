@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import BannerCarousel from './BannerCarousel';
 
 export default class Header extends Component {
   render() {
@@ -32,13 +33,7 @@ export default class Header extends Component {
 			</div>
 		</nav>
 	</div>
-	<div className="banner">
-		<img src={require('../Images/banner.jpg')} alt="banner" className='img-fluid'/>
-			<div className="title">
-				<h1>Port Angeles to Victoria</h1>
-				<h1>See the Black Ball</h1>
-			</div>
-		</div>
+	<BannerCarousel />
 	</div>
 	);
 	}

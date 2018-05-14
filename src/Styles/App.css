@@ -40,6 +40,8 @@ a:hover {
 
 .title h1 {
 	font-size: 1.5em;
+	color: white;
+	text-shadow: 4px 4px 8px rgba(0,0,0,0.8);
 
 }
 .nav-item {
@@ -154,6 +156,15 @@ a:hover {
 	border-radius: 100%;
 }
 
+.notFound img{
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
+}
+.notFound h1 {
+	text-align: center;
+	margin-top: 30px;
+}
 /* ================================= 
   Media Queries
 ==================================== */

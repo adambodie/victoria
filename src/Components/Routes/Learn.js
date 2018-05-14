@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../Styles/Learn.css';
+import shuffle from '../shuffle.js';
 
 export default class Learn extends Component {
 	
@@ -31,25 +32,32 @@ export default class Learn extends Component {
 				"Juan de Fuca was a Greek navigator who claimed to be the first non-native to explore the strait, looking for a semi-mythical Strait of Anian that theoretically separated North America from Asia",
 				"Vancouver Island is the largest island on the West Coast of North America, and the largest island in the Pacific Ocean east of New Zealand",
 				"The southern part of Vancouver island is the only part of Western Canada below the 49th parallel",
-				"Vancouver Island has a population of about 780,000, with about half of them living in Greater Victoria"
-		],
-		randomArray: [],
+				"Vancouver Island has a population of about 780,000, with about half of them living in Greater Victoria",
+				"As of 2011, Aboriginal Canadians (including the First Nations tribes) consisted of about 6% of Victoria’s population.",
+				"An average of 500,000 daily passengers arrive in Victoria docking in the Inner Harbour.",
+				"Victoria is a popular filming location in Canada due to its proximity to Vancouver and a 6% distance location tax credit.",
+				"Cricket has been played at Victoria’s Beacon Hill Park since the mid 19th century.",
+				"Victoria is home of the world’s largest all-seaplane airline, Harbour Air.",
+				"Future Hall of Fame Basketball player Steve Nash spent most of his childhood in Victoria.",
+				"Sequim is pronounced as one syllable, like ‘skwim’",
+				"The Hood Canal Bridge, connecting the Olympic and Kitsap Peninsulas, is the longest floating bridge in the world located in a saltwater tidal basin.",
+				"Franklin D Roosevelt visited Port Angeles in 1937 to help establish Olympic National Park."
+			],
 		}
 		
 		this.newFacts = this.newFacts.bind(this);
 	}
 	
 	newFacts() {
-		let randomNumber = Math.floor(Math.random() * this.state.facts.length);
 		alert("New Facts have been loaded");
 		  this.setState(prevState => ({
-			randomArray: [randomNumber, randomNumber, randomNumber, randomNumber]
+			facts: shuffle(this.state.facts)
     }));
 	}
   render() {
 
-	  const randomArray = [Math.floor(Math.random() * this.state.facts.length), Math.floor(Math.random() * this.state.facts.length), Math.floor(Math.random() * this.state.facts.length), Math.floor(Math.random() * this.state.facts.length )]; 
-	  const listOfFacts = this.state.facts.map((fact, index)=>
+	  const shuffledFacts = shuffle(this.state.facts);
+	  const listOfFacts = shuffledFacts.map((fact, index)=>
 				<div className="photo-container" key={ index }>
 					<div className="photo slide">
 						<img src={require('../../Images/fact.jpg')} alt="Did You Know?"/>
@@ -60,7 +68,7 @@ export default class Learn extends Component {
 				</div> 
 		  );
 		  
-		const randomFacts = listOfFacts.filter((fact, index) => index === randomArray[0] || index === randomArray[1] || index === randomArray[2] || index === randomArray[3]);
+		const randomFacts = listOfFacts.filter((fact, index) => index < 4);
 	return (
 		<div>
 			<div className="facts">

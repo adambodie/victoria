@@ -11,42 +11,34 @@ const FontAwesomeStyle = {
 
 export default class Button extends Component {
 	
+	constructor() {
+		super();
+		this.state = {
+				buttons: [
+					{ 'link' : '/visit', 'name' : 'camera'},
+					{ 'link' : '/eat', 'name' : 'cutlery' },
+					{ 'link' : '/learn', 'name' : 'graduation-cap' },
+					{ 'link' : '/buy', 'name' : 'usd'},
+					]
+		}
+	}
+	
 	render() {
+		
+			let links = this.state.buttons.map((button, index) =>
+					<Link to={button.link} key={index}>
+						<FontAwesome
+							className='homeButtons'
+							name={button.name}
+							size='2x'
+							style={FontAwesomeStyle}
+						/>
+					</Link>
+			);
 			return (
 			<div className="buttons">
-					<Link to='/visit'>
-						<FontAwesome
-							className='homeButtons'
-							name='camera'
-							size='2x'
-							style={FontAwesomeStyle}
-						/>
-					</Link>
-					<Link to='/eat'>
-						<FontAwesome
-							className='homeButtons'
-							name='cutlery'
-							size='2x'
-							style={FontAwesomeStyle}
-						/>
-					</Link>
-					<Link to='/learn'>
-						<FontAwesome
-							className='homeButtons'
-							name='graduation-cap'
-							size='2x'
-							style={FontAwesomeStyle}
-						/>
-					</Link>
-					<Link to='/learn'>
-						<FontAwesome
-							className='homeButtons'
-							name='usd'
-							size='2x'
-							style={FontAwesomeStyle}
-						/>
-					</Link> 
-				</div>
+				{links}
+			</div>
 			)
 		
 	}
