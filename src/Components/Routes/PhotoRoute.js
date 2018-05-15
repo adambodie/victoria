@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import Carousel from '../Carousel';
-
-export default class Visit extends Component {
+import PhotoCarousel from '../Carousels/PhotoCarousel';
+import '../../Styles/Tabs.css';
+export default class PhotoRoute extends Component {
 
 	render() {
 	const pages = [
@@ -23,12 +23,10 @@ export default class Visit extends Component {
 	let tabs = pages.map((page, index) => 
 		<TabPanel key={index}>
 			<h1 className="tabTitle">{page.title}</h1>
-			<Carousel id={page.id} />
+			<PhotoCarousel id={page.id} />
 		</TabPanel>
 	);
-	let lists = pages.map((page, index) =>
-			<Tab key={index}>Part {index + 1}</Tab>
-	);		
+	let lists = pages.map((page, index) => <Tab key={index}>Part {index + 1}</Tab>);
 	return (
 		<div className="visit">
 			<Tabs>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import '../../Styles/Buy.css';
 
-export default class Buy extends Component {
+export default class BuyRoute extends Component {
 	
 	  constructor(props) {
 		super(props);

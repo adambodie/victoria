@@ -6,12 +6,12 @@ import {
 } from 'react-router-dom';
 import './Styles/App.css';
 import Header from './Components/Header';
-import Home from './Components/Routes/Home';
-import Visit from './Components/Routes/Visit';
-import Learn from './Components/Routes/Learn';
-import Buy from './Components/Routes/Buy';
-import Eat from './Components/Routes/Eat';
-import NotFound from './Components/Routes/NotFound';
+import HomeRoute from './Components/Routes/HomeRoute';
+import PhotoRoute from './Components/Routes/PhotoRoute';
+import FactRoute from './Components/Routes/FactRoute';
+import BuyRoute from './Components/Routes/BuyRoute';
+import RestaurantRoute from './Components/Routes/RestaurantRoute';
+import NotFoundRoute from './Components/Routes/NotFoundRoute';
 import Footer from './Components/Footer';
 
 class App extends Component {
@@ -20,20 +20,19 @@ class App extends Component {
       	<Router>
 			<div className="App">
 				<Header/>
-				<Switch>
-				<Route exact path = "/" render={() => <Home/>}/>
-				<Route path = "/visit" render={() => <Visit />}/>
-				<Route path = "/eat" render={() => <Eat />}/>
-				<Route path = "/learn" render={() => <Learn />}/>
-				<Route path = "/buy" render={() => <Buy />}/>
-				<Route component={NotFound} />
-				</Switch>
+					<Switch>
+						<Route exact path = "/" render={() => <HomeRoute />}/>
+						<Route path = "/visit" render={() => <PhotoRoute />}/>
+						<Route path = "/eat" render={() => <RestaurantRoute />}/>
+						<Route path = "/learn" render={() => <FactRoute />}/>
+						<Route path = "/buy" render={() => <BuyRoute />}/>
+						<Route component={NotFoundRoute} />
+					</Switch>
 				<Footer/>
 			</div>
       </Router>
     );
   }
 }
-
 
 export default App;

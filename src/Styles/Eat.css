@@ -8,6 +8,10 @@
 	margin: 50px 20px;
 }
 
+.pageTitle {
+	text-align: center;
+}
+
 .restaurantTitle {
 	width: 100%;
 }

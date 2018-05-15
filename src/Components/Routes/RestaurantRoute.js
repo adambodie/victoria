@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import '../../Styles/Eat.css';
+import RestaurantList from '../Containers/RestaurantList';
 
-export default class Eat extends Component {
-	render() {
-		
-		const restaurants = [
+export default class RestaurantRoute extends Component {
+	constructor() {
+		super();
+		this.state = {
+			restaurants: [
 			{
 				'title': 'Frugal\'s',
 				'image': require('../../Images/frugal.jpg'),
@@ -60,28 +62,15 @@ export default class Eat extends Component {
 						'three': 'Entering the Horse & Cow, I noticed the funky and gritty vibe.  Not super caring of where I sat, I entered the bar and ordered myself a Georgetown Brewing Bodhizafa IPA.  Gotta love that name.  Not the best IPA I\'ve had but nothing wrong with trying a new Seattle beer.  Again, trying to be adventurous and taking advantage of their Sunday Special, I ordered a $6.99 Steak and Fries.  It had been years since I had a steak.  The steak was satisfying, though not particularly superb, I had to teach myself how to properly cut and eat my steak.  I felt a little off before eating, but after lunch, I felt a lot better.  Mission accomplished.'
 					}
 			}
-		];
-		let restaurantReviews = restaurants.map((restaurant, index) => 
-			<div className='restaurant' key={index}>
-					<h2 className="restaurantTitle">{restaurant.title}</h2>
-					<div className="restaurantImage">
-						<img src={restaurant.image} alt={restaurant.title} className="img-fluid"/>
-						<div className="address">
-							<p>{restaurant.address.one}</p>
-							<p>{restaurant.address.two}</p>
-						</div>
-					</div>
-					<div className='paragraph'>
-						<p>{restaurant.paragraph.one}</p>
-						<p>{restaurant.paragraph.two}</p>
-						<p>{restaurant.paragraph.three}</p>
-					</div>
-				</div>
-	);
+		]	
+	}
+}		
+	
+	
+	render() {
 		return (
 			<div>
-				<h1 className='pageTitle'>Restaurant Reviews</h1>
-				{restaurantReviews}
+				<RestaurantList data={this.state.restaurants} />
 			</div>
 		)
 	}

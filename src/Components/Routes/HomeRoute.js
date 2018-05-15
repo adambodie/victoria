@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../../Styles/Home.css';
-import Button from '../../Components/Button.js';
-import shuffle from '../shuffle.js';
+import HomeList from '../Containers/HomeList';
+import ButtonCarousel from '../Carousels/ButtonCarousel.js';
 
-export default class Home extends Component {
+export default class HomeRoute extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -49,26 +49,10 @@ export default class Home extends Component {
 			}
 		}	
 		render(){
-			let shuffleArray = shuffle(this.state.features);
-			let frontPageFeatures = shuffleArray.map((feature, index) =>
-				<div className="home-container" key={ index }>
-							<div className="home-photo">
-								<img src={feature.image} alt={feature.alt}/>
-								<div className="home-overlay">
-								  <h3>{feature.title}</h3>
-								  <p>{feature.text}</p>
-								</div>
-							</div>
-						</div>
-			);
 			return (
 			  <div>
-				<Button />
-				<div className="content-parent">
-					<div className="content">
-						{frontPageFeatures}
-					</div>
-				</div>
+				<ButtonCarousel />
+				<HomeList data={this.state.features} />
 			</div>
 			);
 }

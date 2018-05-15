@@ -1,3 +1,15 @@
+.factButton {
+	display: block;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.7);
+	margin-bottom: 30px;
+	color: white;
+	padding: 20px;
+}
+.factButton:hover {
+	background-color: rgba(0,0,0,1);
+}
+
 .photo-overlay {
 	opacity: 0;
 	transition: opacity .5s;
@@ -24,7 +36,7 @@
 }
 
 h3 {
-	font-size: 1em;
+	font-size: 0.8em;
 	line-height: 1.25em;
 	margin-top: .85em;
 	margin-bottom: .5em;

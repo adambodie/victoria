@@ -1,27 +1,30 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import Photo from './Photo';
+import Banner from '../Items/Banner';
 
-export default class PhotoList extends Component {
+export default class BannerList extends Component {
 
 	render() {
 		let results = this.props.data;
 		const settings = {
 			dots: true,
 			infinite: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 10000,
+			speed: 3000,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			fade: true,
+			fade: true
 		};
-  let length = this.props.page;
   let photos = results.map((x, index) =>
-    <div key={x.id}>
-    <Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} tags={x.tags} index={index + 1} length={length}/>
-    </div>
+	<div key={index}>
+		<Banner name={x.name} />
+	</div>
   )
   
   return(
-  <div>
+  <div className="bannerSlick">
     <Slider ref={c => this.slider = c } {...settings}>
       {photos}
     </Slider>

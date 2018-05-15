@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import '../../Styles/Learn.css';
+import FactList from '../Containers/FactList';
 import shuffle from '../shuffle.js';
 
-export default class Learn extends Component {
+export default class FactRoute extends Component {
 	
 	constructor() {
 		super();
@@ -24,6 +25,7 @@ export default class Learn extends Component {
 				"Vancouver Island is 290 miles in length and 62 miles in width at its widest point",
 				"Terry Fox, whose statue stands in Beacon Hill Park, attempted to run across Canada with an artifical leg to raise money for cancer awareness.  Starting in Newfoundland, he had to stop in Thunder Bay, Ontario due to declining health and later passed away.",
 				"The MV Coho can hold up to 110 vehicles and 1,000 passengers",
+				"Canada 150 is to honor the 150th Anniversary of the formation of the Canadian Confederation, in which the British colonies formed with Nova Scotia and New Brunswick to become Canada, which occurred on July 1, 1867",
 				"Vancouver Island is one of the few areas of Canada that can grow subtropical Mediterranean crops such as olives and lemons",
 				"Thunderbird Park, part of the Royal BC Museum, is home of totem poles, mostly from the Haida, Gitxsan and Kwakwaka'wakw tribes.",
 				"Due to its climate and location, Sequim, Washington is nicknamed the 'Lavender Capital of North America,' cultivating more Lavender than anywhere outside of France",
@@ -56,25 +58,10 @@ export default class Learn extends Component {
 	}
   render() {
 
-	  const shuffledFacts = shuffle(this.state.facts);
-	  const listOfFacts = shuffledFacts.map((fact, index)=>
-				<div className="photo-container" key={ index }>
-					<div className="photo slide">
-						<img src={require('../../Images/fact.jpg')} alt="Did You Know?"/>
-						<div className="photo-overlay">
-							<h3>{fact}</h3> 
-						</div>
-					</div>
-				</div> 
-		  );
-		  
-		const randomFacts = listOfFacts.filter((fact, index) => index < 4);
 	return (
 		<div>
-			<div className="facts">
-				{randomFacts}
-			</div>
-			<button onClick={this.newFacts}>More Facts</button>
+			<FactList data={this.state.facts} />
+			<button className="factButton" onClick={this.newFacts}>More Facts</button>
 		</div>
 	);
 	}

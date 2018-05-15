@@ -1,0 +1,56 @@
+.banner {
+	width: 100%;
+	position: relative;
+}
+
+.title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title h1 {
+	font-size: 1.25em;
+	line-height: 1.0;
+	color: white;
+	text-shadow: 4px 4px 8px rgba(0,0,0,0.8);
+
+}
+.nav-item {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.navbar-brand {
+	color: white!important;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 480px) {
+	.navbar-nav {
+		flex-direction: row;
+		font-size: 12px;
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 480px) {
+	.navbar-nav {
+		font-size: 16px;
+	}
+	.nav-item {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}

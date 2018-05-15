@@ -1,25 +1,45 @@
-/* ================================= 
-  Base Element Styles
-==================================== */
-
-h3 {
+.home-overlay h3 {
 	font-size: 0.8em;
 	line-height: 1.0em;
 	margin-top: 1.0em;
 	margin-bottom: .5em;
 	font-weight: bold;
 }
-p {
+.home-overlay p {
 	font-size: .6em;
 	line-height: 1.5;
 	margin: 0 0 1.5em;
 }
+.content-parent {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 30px;
+}
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	margin-top: -10px;
+	padding: 20px;
+	box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+}
 
-/* ================================= 
-  Base Layout Styles
-==================================== */
+.homeButtons {
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	border-radius: 100%;
+}
 
-/* ---- Layout Containers ---- */
+.homeButtons:hover {
+	box-shadow: 5px 5px 10px rgba(0,0,0, 0.8);
+}
 
 .home-container {
 	text-align: center;
@@ -75,17 +95,15 @@ p {
 
 
 @media (min-width: 767px) {
-h3 {
-	font-size: 1.4em;
-	line-height: 1.25em;
-	margin-top: .85em;
-	margin-bottom: .5em;
-	font-weight: bold;
-}
-	p {
+	.home-overlay h3 {
+		font-size: 1.4em;
+		line-height: 1.25em;
+		margin-top: .85em;
+		margin-bottom: .5em;
+	}
+	.home-overlay p {
 		font-size: 1em;
 		line-height: 1.4;
-		margin: 0 0 1.5em;
 	}
 	.home-overlay {
 		background: rgba(0,0,0, 0);

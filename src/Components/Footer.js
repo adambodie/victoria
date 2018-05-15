@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 
 export default class Footer extends Component {
   render() {
+	const year = new Date().getFullYear();
 	return (
-		<div className="footer">
+		<div>
 			<nav className="navbar navbar-expand-md navbar-dark bg-dark">
-				<p>Adam Bodie</p>
+				<p style={{ color: 'white' }}>Adam Bodie &copy;{year}</p>
 			</nav>
-	</div>
+		</div>
 	);
 	}
 }
