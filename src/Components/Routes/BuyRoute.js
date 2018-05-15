@@ -7,7 +7,7 @@ export default class BuyRoute extends Component {
 	  constructor(props) {
 		super(props);
 			this.state = {
-				currency: '',
+				rate: '',
 				value: '',
 				canadianValue: '',
 			};
@@ -19,14 +19,14 @@ export default class BuyRoute extends Component {
 	  }
 
 	  handleSubmit(event) {
-		  this.setState({canadianValue: '$' + (this.state.value * this.state.currency).toFixed(2)});
+		  this.setState({canadianValue: '$' + (this.state.value * this.state.rate).toFixed(2)});
           event.preventDefault();
 	  }
     componentDidMount() {
       axios.get('https://openexchangerates.org/api/latest.json?app_id=032ca3c4ffbb46378faefd64ec6892cb')
         .then(response => {
           this.setState({
-            currency: response.data.rates.CAD
+            rate: response.data.rates.CAD
           });
         })
         .catch(error => {
@@ -39,7 +39,7 @@ export default class BuyRoute extends Component {
 			return (
 				<div>
 					<h1 className="currency">Currency Exchange Rate</h1>
-					<h6>USD to CAD Exchange rate: {this.state.currency}</h6>
+					<h6>USD to CAD Exchange rate: {this.state.rate}</h6>
 					<div className="currencyRates">
 						<div className="usd">
 							<h2>United States Dollars</h2>
