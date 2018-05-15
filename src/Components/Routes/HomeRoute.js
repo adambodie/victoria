@@ -9,37 +9,37 @@ export default class HomeRoute extends Component {
 		this.state = {
 				features: [
 					{
-						'image': require('../../Images/port-angeles.jpg'),
+						'image': 'port-angeles',
 						'alt': 'Port Angeles',
 						'title': 'Port Angeles',
 						'text': 'Visit Port Angeles, Gateway to the Olympic National Park',
 					},
 					{
-						'image': require('../../Images/coho.jpg'),
+						'image': 'coho',
 						'alt': 'MV Coho',
 						'title': 'MV Coho',
 						'text': 'Take the MV Coho from Port Angeles to Victoria',
 					},
 					{
-						'image': require('../../Images/chowder.jpg'),
+						'image': 'chowder',
 						'alt': 'Cuisine',
 						'title': 'Cuisine',
 						'text': 'Enjoy some fine Pacific Northwest cuisine',
 					},
 					{
-						'image': require('../../Images/klallam.jpg'),
+						'image': 'klallam',
 						'alt': 'Native Americans',
 						'title': 'Native Americans',
 						'text': 'Learn about the Native Americans of the Pacific Northwest',
 					},
 					{
-						'image': require('../../Images/victoria.jpg'),
+						'image': 'victoria',
 						'alt': 'Victoria',
 						'title': 'Victoria',
 						'text': 'Enjoy the Sights of Victoria, "The Garden City"',
 					},
 					{
-						'image': require('../../Images/rainbow.jpg'),
+						'image': 'rainbow',
 						'alt': 'Amazing',
 						'title': 'Amazing',
 						'text': 'Witness something truly amazing',

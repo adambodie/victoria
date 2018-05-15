@@ -9,7 +9,7 @@ export default class RestaurantRoute extends Component {
 			restaurants: [
 			{
 				'title': 'Frugal\'s',
-				'image': require('../../Images/frugal.jpg'),
+				'image': 'frugal',
 				'address': {
 						'one': '1520 E Front Street',
 						'two': 'Port Angeles, WA 98363'
@@ -22,7 +22,7 @@ export default class RestaurantRoute extends Component {
 			},
 			{
 				'title': 'Frankie\'s Modern Diner',
-				'image': require('../../Images/frankie.jpg'),
+				'image': 'frankie',
 				'address': {
 						'one': '910 Government St #38',
 						'two': 'Victoria, BC V8W 1X3, Canada'
@@ -35,7 +35,7 @@ export default class RestaurantRoute extends Component {
 			},
 			{
 				'title': 'Coyote BBQ Pub',
-				'image': require('../../Images/coyote.jpg'),
+				'image': 'coyote',
 				'address': {
 						'one': '201 E Front St',
 						'two': 'Port Angeles, WA 98362'
@@ -50,7 +50,7 @@ export default class RestaurantRoute extends Component {
 			},
 			{
 				'title': 'Horse & Cow Bar & Grill',
-				'image': require('../../Images/horse-cow.jpg'),
+				'image': 'horse-cow',
 				'address': {
 						'one': '536 4th St',
 						'two': 'Bremerton, WA 98337'
