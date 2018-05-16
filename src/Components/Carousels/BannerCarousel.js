@@ -6,18 +6,15 @@ export default class BannerCarousel extends Component {
   constructor(props) {
       super(props);
       this.state = {
-        banners: [{'name': 'coast-banner'},{'name': 'harbour-banner'}, {'name': 'parliament-banner'}, {'name': 'port-angeles-banner'}]
+        banners: [{'name': 'coast-banner', 'alt' : 'Coastline'},{'name': 'harbour-banner', 'alt' : 'Inner Harbour'}, {'name': 'parliament-banner', 'alt' : 'British Columbia Parliament Buildings'}, {'name': 'port-angeles-banner', 'alt' : 'Port Angeles'}],
       };
     }
+  
+    
   render() {
+
 	return (
-	<div className="banner">
 		<BannerList data={this.state.banners} />
-			<div className="title">
-				<h1>Port Angeles to Victoria</h1>
-				<h1>See Adam's Black Ball Trip</h1>
-			</div>
-	</div>
 	);
 	}
 }
