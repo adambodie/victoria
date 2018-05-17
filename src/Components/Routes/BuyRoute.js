@@ -23,7 +23,7 @@ export default class BuyRoute extends Component {
 		  if (regex.test(this.state.value)) {
 				this.setState({canadianValue: '$' + (this.state.value * this.state.rate).toFixed(2)})
 			 } else {
-				this.setState({canadianValue: 'Please enter a numerical value'});				
+				this.setState({canadianValue: 'Please enter a numerical value'});
 			}
           event.preventDefault();
 	  }

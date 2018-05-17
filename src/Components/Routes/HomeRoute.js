@@ -12,13 +12,13 @@ export default class HomeRoute extends Component {
 						'image': 'port-angeles',
 						'alt': 'Port Angeles',
 						'title': 'Port Angeles',
-						'text': 'Visit Port Angeles, Gateway to the Olympic National Park',
+						'text': 'Visit the Gateway to the Olympic National Park',
 					},
 					{
 						'image': 'coho',
 						'alt': 'MV Coho',
 						'title': 'MV Coho',
-						'text': 'Take the MV Coho from Port Angeles to Victoria',
+						'text': 'Take the Ferry from Port Angeles to Victoria',
 					},
 					{
 						'image': 'chowder',
@@ -30,13 +30,13 @@ export default class HomeRoute extends Component {
 						'image': 'klallam',
 						'alt': 'Native Americans',
 						'title': 'Native Americans',
-						'text': 'Learn about the Native Americans of the Pacific Northwest',
+						'text': 'Learn about the Native American Culture of the Pacific Northwest',
 					},
 					{
 						'image': 'victoria',
 						'alt': 'Victoria',
 						'title': 'Victoria',
-						'text': 'Enjoy the Sights of Victoria, "The Garden City"',
+						'text': 'Enjoy the Sights of "The Garden City"',
 					},
 					{
 						'image': 'rainbow',

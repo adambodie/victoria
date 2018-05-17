@@ -60,6 +60,7 @@ export default class FactRoute extends Component {
 
 	return (
 		<div>
+		<h1 className='pageTitle'>Fun Facts</h1>
 			<FactList data={this.state.facts} />
 			<button className="factButton" onClick={this.newFacts}>More Facts</button>
 		</div>
