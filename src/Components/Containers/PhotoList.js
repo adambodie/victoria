@@ -13,16 +13,14 @@ export default class PhotoList extends Component {
 			slidesToScroll: 1,
 			fade: true,
 		};
-  let length = this.props.page;
-  let photos = results.map((x, index) =>
-    <div key={x.id}>
-    <Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} tags={x.tags} index={index + 1} length={length}/>
-    </div>
-  )
-  
-  return(
-    <Slider ref={c => this.slider = c } {...settings}>
-      {photos}
+
+    return(
+      <Slider ref={c => this.slider = c } {...settings}>
+        {results.map((x, index) =>
+          <div key={x.id}>
+            <Photo id={x.id} title={x.title}  />
+          </div>
+        ).filter((x, index) => index >= this.props.begin && index <= this.props.end)}
     </Slider>
   );
 }

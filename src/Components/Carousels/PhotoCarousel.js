@@ -2,25 +2,21 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import PhotoList from '../Containers/PhotoList';
 import '../../Styles/Slick.css';
-import formUrl from '../formUrl.js';
+
 
 export default class Carousel extends Component {
   constructor(props) {
       super(props);
       this.state = {
         photographs: [],
-        per_page: this.props.page
       };
     }
 
     componentDidMount() {
-      let photoset_id = this.props.id;
-      let per_page = this.props.page;
-      const url = formUrl(photoset_id, per_page);
-      axios.get(url)
+      axios.get(`https://s3-us-west-2.amazonaws.com/victoria.bodiewebdesign.com/data.json`)
         .then(response => {
           this.setState({
-            photographs: response.data.photoset.photo,
+            photographs: response.data
           });
         })
         .catch(error => {
@@ -30,7 +26,9 @@ export default class Carousel extends Component {
 
     render() {
       return (
-		<div><PhotoList data={this.state.photographs} page={this.state.per_page}/></div>
+		    <div>
+          <PhotoList data={this.state.photographs} begin={this.props.begin} end={this.props.end} />
+        </div>
       );
     }
 }

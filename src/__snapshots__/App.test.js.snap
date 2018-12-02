@@ -53,7 +53,7 @@ exports[`Snapshots renders a photo 1`] = `
 <div>
   <img
     alt="Test picture"
-    src="https://farmabc.staticflickr.com/def/ghi_jklm_z.jpg"
+    src="https://s3-us-west-2.amazonaws.com/victoria.bodiewebdesign.com/Images/ghi_o.jpg"
   />
   <h3>
     Test picture
