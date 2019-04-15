@@ -19,9 +19,10 @@ export default class BuyRoute extends Component {
 	  }
 
 	  handleSubmit(event) {
+		  const { value, rate } = this.state;
 		  const regex = /^[+-]?(\d*\.)?\d+$/;
-		  if (regex.test(this.state.value)) {
-				this.setState({canadianValue: '$' + (this.state.value * this.state.rate).toFixed(2)})
+		  if (regex.test(value)) {
+				this.setState({canadianValue: '$' + (value * rate).toFixed(2)})
 			 } else {
 				this.setState({canadianValue: 'Please enter a numerical value'});
 			}
@@ -41,22 +42,23 @@ export default class BuyRoute extends Component {
 
 		
 		render() {
+			const { rate, value, canadianValue } = this.state;
 			return (
 				<div>
 					<h1 className="currency">Currency Exchange Rate</h1>
-					<h6>USD to CAD Exchange rate: {this.state.rate}</h6>
+					<h6>USD to CAD Exchange rate: {rate}</h6>
 					<div className="currencyRates">
 						<div className="usd">
 							<h2>United States Dollars</h2>
 							<form className="results" onSubmit={this.handleSubmit}>
-								<input type="text" value={this.state.value} onChange={this.handleChange} /><br/>
+								<input type="text" value={value} onChange={this.handleChange} /><br/>
 								<input type="submit" value="Submit" />
 							</form>
 						</div>
 						<div className="cad">
 							<h2>Canadian Dollars</h2>
 							<div className="results">
-								<h3>{this.state.canadianValue}</h3>
+								<h3>{canadianValue}</h3>
 							</div>
 						</div>
 					</div>

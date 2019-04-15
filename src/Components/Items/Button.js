@@ -9,15 +9,15 @@ const FontAwesomeStyle = {
 	alignItems: 'center'
 };
 
-const Button = props => (
-		<Link to={props.link}>
-			<FontAwesome
-				className='homeButtons'
-				name={props.name}
-				size='2x'
-				style={FontAwesomeStyle}
-			/>
-		</Link>
+const Button = ({link, name}) => (
+	<Link to={link}>
+		<FontAwesome
+			className='homeButtons'
+			name={name}
+			size='2x'
+			style={FontAwesomeStyle}
+		/>
+	</Link>
 );
 
 export default Button;

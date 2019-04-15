@@ -5,7 +5,7 @@ import Photo from '../Items/Photo';
 export default class PhotoList extends Component {
 
 	render() {
-		let results = this.props.data;
+		const { data, begin, end } = this.props;
 		const settings = {
 			dots: true,
 			infinite: true,
@@ -13,15 +13,15 @@ export default class PhotoList extends Component {
 			slidesToScroll: 1,
 			fade: true,
 		};
-
-    return(
-      <Slider ref={c => this.slider = c } {...settings}>
-        {results.map((x, index) =>
-          <div key={x.id}>
-            <Photo id={x.id} title={x.title}  />
-          </div>
-        ).filter((x, index) => index >= this.props.begin && index <= this.props.end)}
-    </Slider>
-  );
-}
+		return(
+			<Slider ref={c => this.slider = c } {...settings}>
+				{data.map((x, index) =>
+					<div key={x.id}>
+						<Photo id={x.id} title={x.title}  />
+					</div>
+					).filter((x, index) => index >= begin && index <= end)
+				}
+			</Slider>
+		);
+	}
 }
