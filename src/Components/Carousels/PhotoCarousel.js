@@ -5,15 +5,15 @@ import '../../Styles/Slick.css';
 
 
 export default class Carousel extends Component {
-  constructor(props) {
-      super(props);
+  constructor() {
+      super();
       this.state = {
         photographs: [],
       };
     }
 
     componentDidMount() {
-      axios.get(`https://s3-us-west-2.amazonaws.com/victoria.bodiewebdesign.com/data.json`)
+      axios.get(`https://victoria.bodiewebdesign.com/data.json`)
         .then(response => {
           this.setState({
             photographs: response.data
@@ -25,10 +25,10 @@ export default class Carousel extends Component {
     }
 
     render() {
-      return (
-		    <div>
-          <PhotoList data={this.state.photographs} begin={this.props.begin} end={this.props.end} />
-        </div>
-      );
-    }
+		const { photographs} = this.state;
+		const { begin, end } = this.props;
+		return (
+			<PhotoList data={photographs} begin={begin} end={end} />
+		);
+	}
 }

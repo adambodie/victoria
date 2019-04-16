@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import BannerList from '../Containers/BannerList';
 import '../../Styles/Slick.css';
 
 export default class BannerCarousel extends Component {
-  constructor(props) {
-      super(props);
-      this.state = {
-        banners: [{'name': 'coast-banner', 'alt' : 'Coastline'},{'name': 'harbour-banner', 'alt' : 'Inner Harbour'}, {'name': 'parliament-banner', 'alt' : 'British Columbia Parliament Buildings'}, {'name': 'port-angeles-banner', 'alt' : 'Port Angeles'}],
-      };
-    }
-  
+	constructor() {
+		super();
+		this.state = {
+			banners: [],
+		};
+	}
+  	componentDidMount() {
+		axios.get(`https://victoria.bodiewebdesign.com/static/data/banner.json`)
+		.then(response => {
+			this.setState({
+				banners: response.data
+			});
+		})
+		.catch(error => {
+			console.log('Error fetching and parsing Photographs data', error);
+			});
+		}
     
-  render() {
-
-	return (
-		<BannerList data={this.state.banners} />
-	);
+	render() {
+		const { banners } = this.state;
+		return (
+			<BannerList data={banners} />
+		);
 	}
 }

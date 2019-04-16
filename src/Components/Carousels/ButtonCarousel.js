@@ -16,7 +16,6 @@ export default class ButtonCarousel extends Component {
 	}
 	
 	render() {
-
 			return (
 			<ButtonList data={this.state.buttons} />
 			)

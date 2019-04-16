@@ -35,7 +35,7 @@
 	transform: translateX(100%); 
 }
 
-h3 {
+.photo-overlay h3 {
 	font-size: 0.8em;
 	line-height: 1.25em;
 	margin-top: .85em;
@@ -52,6 +52,11 @@ h3 {
 	line-height: 0;
 	margin-bottom: 2em;
 	overflow: hidden;
+}
+.slide img {
+	width: 300px;
+	height: 200px;
+	
 }
 .photo-container img {
  	max-width: 100%;
@@ -110,10 +115,14 @@ h3 {
 	}
 }
 @media (min-width: 769px) {
+	.slide img {
+		width: 600px;
+		height: 400px;
+	}
+	.photo-overlay h3 {
+		font-size: 1em;
+	}
 	.photo-container {
 		width: 40%;
-	}
-	h3 {
-		font-size: 1.3em;
 	}	
 }
