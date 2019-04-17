@@ -1,0 +1,39 @@
+.keyboard {
+	padding: 20px;
+}
+
+.keys {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.keyboard-enter {
+	box-shadow: 5px 5px 10px rgba(0,0,0, 0.75);
+	height: 300px;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 20px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.keyboard-header {
+	text-align: center;
+	font-size: 4em;
+}
+
+.keyboard input[type="submit"] {
+	font-size: 1.25em;
+	padding: 5px;
+	min-width: 36px;
+}
+
+@media (min-width: 768px) {
+	.keyboard input[type="submit"] {
+		font-size: 2.25em;
+		min-width: 90px;
+	}
+}

@@ -11,6 +11,7 @@ import PhotoRoute from './Components/Routes/PhotoRoute';
 import FactRoute from './Components/Routes/FactRoute';
 import BuyRoute from './Components/Routes/BuyRoute';
 import RestaurantRoute from './Components/Routes/RestaurantRoute';
+import SpeakRoute from './Components/Routes/SpeakRoute';
 import NotFoundRoute from './Components/Routes/NotFoundRoute';
 import Footer from './Components/Footer';
 
@@ -26,6 +27,7 @@ class App extends Component {
 						<Route path = "/eat" render={() => <RestaurantRoute />}/>
 						<Route path = "/learn" render={() => <FactRoute />}/>
 						<Route path = "/buy" render={() => <BuyRoute />}/>
+						<Route path = "/speak" render={()=> <SpeakRoute />}/>
 						<Route component={NotFoundRoute} />
 					</Switch>
 				<Footer/>

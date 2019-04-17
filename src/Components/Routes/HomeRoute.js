@@ -25,10 +25,10 @@ export default class HomeRoute extends Component {
 		render(){
 			const { features } = this.state;
 			return (
-			  <div>
-				<ButtonCarousel />
-				<HomeList data={features} />
-			</div>
+				<div>
+					<ButtonCarousel />
+					<HomeList data={features} />
+				</div>
 			);
-}
+		}
 }

@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Footer extends Component {
-  render() {
-	const year = new Date().getFullYear();
-	return (
-			<nav className="navbar navbar-expand-md navbar-dark bg-dark">
-				<p style={{ color: 'white' }}>Adam Bodie &copy;{year}</p>
-			</nav>
-	);
-	}
-}
+const Footer = () => (
+	<nav className="navbar navbar-expand-md navbar-dark bg-dark">
+		<p style={{ color: 'white' }}>Adam Bodie &copy;{new Date().getFullYear()}</p>
+	</nav>
+);
+
+export default Footer;
