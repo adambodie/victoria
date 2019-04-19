@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a fact 1`] = `
+<div
+  className="photo slide"
+>
+  <img
+    alt="Did You Know?"
+    src="https://victoria.bodiewebdesign.com/Images/fact.jpg"
+  />
+  <div
+    className="photo-overlay"
+  >
+    <h3>
+      Hall of Fame Football player John Elway was born in Port Angeles
+    </h3>
+  </div>
+</div>
+`;

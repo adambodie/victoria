@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a restaurant component 1`] = `
+<div
+  className="restaurant"
+>
+  <h2
+    className="restaurantTitle"
+  >
+    Restaurant Name
+  </h2>
+  <div
+    className="restaurantImage"
+  >
+    <img
+      alt="Restaurant Name"
+      className="img-fluid"
+      src="https://victoria.bodiewebdesign.com/Images/restaurant image.jpg"
+    />
+    <div
+      className="address"
+    >
+      <p>
+        123 Fake Street
+      </p>
+      <p>
+        Springfield, USA
+      </p>
+    </div>
+  </div>
+  <div
+    className="paragraph"
+  >
+    <p>
+      One paragraph
+    </p>
+    <p>
+      Two paragraph
+    </p>
+    <p>
+      Three paragraph
+    </p>
+  </div>
+</div>
+`;

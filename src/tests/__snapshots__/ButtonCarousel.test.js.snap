@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders multiple buttons 1`] = `
+<div
+  className="buttons"
+>
+  <div>
+    <a
+      href="/visit"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-camera fa-2x homeButtons"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EE3A43",
+            "color": "black",
+            "justifyContent": "center",
+          }
+        }
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      href="/eat"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-cutlery fa-2x homeButtons"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EE3A43",
+            "color": "black",
+            "justifyContent": "center",
+          }
+        }
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      href="/learn"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-graduation-cap fa-2x homeButtons"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EE3A43",
+            "color": "black",
+            "justifyContent": "center",
+          }
+        }
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      href="/buy"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-usd fa-2x homeButtons"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EE3A43",
+            "color": "black",
+            "justifyContent": "center",
+          }
+        }
+      />
+    </a>
+  </div>
+  <div>
+    <a
+      href="/speak"
+      onClick={[Function]}
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-bullhorn fa-2x homeButtons"
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EE3A43",
+            "color": "black",
+            "justifyContent": "center",
+          }
+        }
+      />
+    </a>
+  </div>
+</div>
+`;

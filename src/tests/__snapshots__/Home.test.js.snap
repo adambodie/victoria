@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a feature on the home page 1`] = `
+<div
+  className="home-photo"
+>
+  <img
+    alt="Port Angeles"
+    src="https://victoria.bodiewebdesign.com/Images/port-angeles.jpg"
+  />
+  <div
+    className="home-overlay"
+  >
+    <h3>
+      Port Angeles
+    </h3>
+    <p>
+      Visit the Gateway to the Olympic National Park
+    </p>
+  </div>
+</div>
+`;
