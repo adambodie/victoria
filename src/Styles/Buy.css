@@ -5,8 +5,6 @@
 	flex-wrap: wrap;
 }
 .usd, .cad {
-	width: 80%;
-	height: 400px;
 	background: rgba(0,0,0, 0.1);
 	margin: 20px;
 	text-align: center;
@@ -19,8 +17,17 @@
 }
 .usd h2, .cad h2 {
 	font-size: 1.5em;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
 }
 
+.usd {
+	background-image: url('../us50.jpg');
+}
+
+.cad {
+	background-image: url('../canada50.jpg');
+}
 .currency {
 	text-align: center;
 	margin-top: 20px;
@@ -49,12 +56,17 @@ input[type="submit"]:hover {
 }
 @media (min-width: 769px) {
 	.usd, .cad {
-		width: 45%;
+		width: 500px;
+		height: 228px;
 	}
 	.usd h2, .cad h2 {
 		font-size: 2em;
 	}
 	.currency {
 		font-size: 2.5em;
-	}	
+	}
+	.cad h3 {
+		color: white;
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+	}
 }
