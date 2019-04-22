@@ -14,6 +14,7 @@ import RestaurantRoute from './Components/Routes/RestaurantRoute';
 import SpeakRoute from './Components/Routes/SpeakRoute';
 import NotFoundRoute from './Components/Routes/NotFoundRoute';
 import Footer from './Components/Footer';
+import ButtonCarousel from './Components/Carousels/ButtonCarousel.js';
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
 						<Route path = "/speak" render={()=> <SpeakRoute />}/>
 						<Route component={NotFoundRoute} />
 					</Switch>
+				<ButtonCarousel />
 				<Footer/>
 			</div>
       </Router>

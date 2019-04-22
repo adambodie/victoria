@@ -1,9 +1,12 @@
 import React from 'react';
+import '../Styles/Footer.css';
 
 const Footer = () => (
-	<nav className="navbar navbar-expand-md navbar-dark bg-dark">
-		<p style={{ color: 'white' }}>Adam Bodie &copy;{new Date().getFullYear()}</p>
-	</nav>
+	<footer>
+		<nav className="navbar navbar-expand-md navbar-dark bg-dark">
+			<p>Adam Bodie &copy;{new Date().getFullYear()}</p>
+		</nav>
+	</footer>
 );
 
 export default Footer;

@@ -1,4 +1,6 @@
-
+.visit {
+	margin-bottom: 100px;
+}
 
 /*Tabs CSS
  -----------------------*/
@@ -20,7 +22,7 @@
   bottom: -1px;
   position: relative;
   list-style: none;
-  padding: 6px 12px;
+  padding: 5px 10px;
   cursor: pointer;
   font-size: 10px;
 }

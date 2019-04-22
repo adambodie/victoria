@@ -3,8 +3,9 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-bottom: 100px;
 }
-.usd, .cad {
+.currencyColumn {
 	background: rgba(0,0,0, 0.1);
 	margin: 20px;
 	text-align: center;
@@ -15,7 +16,7 @@
 	align-content: stretch;
 	box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
 }
-.usd h2, .cad h2 {
+.currencyColumn h2 {
 	font-size: 1.5em;
 	color: white;
 	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
@@ -23,18 +24,31 @@
 
 .usd {
 	background-image: url('../us50.jpg');
+	width: 335px;
+	height: 205px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .cad {
 	background-image: url('../canada50.jpg');
+	display: flex;
+	width: 335px;
+	height: 205px;
+	justify-content: center;
+	align-items: center;
 }
+
+.cad h3 {
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+
 .currency {
 	text-align: center;
 	margin-top: 20px;
-	font-size: 1.5em;
-}
-.results {
-	height: 200px;
+	font-size: 2.5em;
 }
 input[type="text"] {
 	margin-bottom: 30px;
@@ -65,8 +79,5 @@ input[type="submit"]:hover {
 	.currency {
 		font-size: 2.5em;
 	}
-	.cad h3 {
-		color: white;
-		text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
-	}
+
 }

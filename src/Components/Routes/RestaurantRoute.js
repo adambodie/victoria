@@ -24,7 +24,7 @@ export default class RestaurantRoute extends Component {
 	render() {
 		const { restaurants } = this.state;
 		return (
-			<div>
+			<div className="restaurants">
 				<RestaurantList data={restaurants} />
 			</div>
 		)

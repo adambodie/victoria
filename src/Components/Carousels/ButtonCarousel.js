@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ButtonList from '../Containers/ButtonList';
+import '../../Styles/Footer.css';
 
 export default class ButtonCarousel extends Component {
 	

@@ -1,5 +1,6 @@
 .keyboard {
 	padding: 20px;
+	margin-bottom: 100px;
 }
 
 
@@ -29,7 +30,7 @@
 
 .keyboard-header {
 	text-align: center;
-	font-size: 4em;
+	font-size: 2.5em;
 }
 
 .keyboard input[type="submit"] {

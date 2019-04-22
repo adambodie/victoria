@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../../Styles/Home.css';
 import HomeList from '../Containers/HomeList';
-import ButtonCarousel from '../Carousels/ButtonCarousel.js';
 import axios from 'axios';
 
 export default class HomeRoute extends Component {
@@ -25,8 +24,7 @@ export default class HomeRoute extends Component {
 		render(){
 			const { features } = this.state;
 			return (
-				<div>
-					<ButtonCarousel />
+				<div className="home">
 					<HomeList data={features} />
 				</div>
 			);

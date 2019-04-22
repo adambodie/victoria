@@ -1,0 +1,28 @@
+footer {
+	display: none;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
+	background: #F5F4F0;
+	margin-top: -10px;
+	padding: 20px;
+	box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
+	width: 100%;
+}
+
+@media (min-width: 512px) {
+	footer {
+		display: block;
+	}
+	nav p {
+		color: white;
+	}
+	.buttons {
+		display: none;
+	}
+}

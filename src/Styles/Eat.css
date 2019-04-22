@@ -1,3 +1,7 @@
+.restaurants {
+	margin-bottom: 115px;
+}
+
 .restaurant {
 	display: flex;
 	padding: 20px;
@@ -5,7 +9,7 @@
 	align-content: flext-start;
 	box-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
 	background: rgba(0,0,0, 0.1);
-	margin: 50px 20px;
+	margin: 30px 15px;
 }
 
 .pageTitle {

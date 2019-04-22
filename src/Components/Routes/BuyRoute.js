@@ -48,17 +48,21 @@ export default class BuyRoute extends Component {
 					<h1 className="currency">Currency Exchange Rate</h1>
 					<h6>USD to CAD Exchange rate: {rate}</h6>
 					<div className="currencyRates">
+						<div className="currencyColumn">
+						<h2>United States Dollars</h2>
 						<div className="usd">
-							<h2>United States Dollars</h2>
 							<form className="results" onSubmit={this.handleSubmit}>
 								<input type="text" value={value} onChange={this.handleChange} /><br/>
 								<input type="submit" value="Submit" />
 							</form>
 						</div>
-						<div className="cad">
+						</div>
+						<div className="currencyColumn">
 							<h2>Canadian Dollars</h2>
-							<div className="results">
-								<h3>{canadianValue}</h3>
+							<div className="cad">
+								<div className="results">
+									<h3>{canadianValue}</h3>
+								</div>
 							</div>
 						</div>
 					</div>
