@@ -1,8 +1,11 @@
+.factRoute {
+	margin-bottom: 110px;
+}
+
 .factButton {
 	display: block;
 	margin: 0 auto;
 	background-color: rgba(0,0,0,0.7);
-	margin-bottom: 30px;
 	color: white;
 	padding: 20px;
 }

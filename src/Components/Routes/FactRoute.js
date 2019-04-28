@@ -30,7 +30,7 @@ export default class FactRoute extends Component {
 	render() {
 		const { facts } = this.state;
 		return (
-			<div>
+			<div className="factRoute">
 				<h1 className='pageTitle'>Fun Facts</h1>
 				<FactList data={facts} />
 				<button className="factButton" onClick={this.newFacts}>More Facts</button>
