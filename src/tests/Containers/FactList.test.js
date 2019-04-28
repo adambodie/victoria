@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
-import FactList from '../Components/Containers/FactList';
-import Fact from '../Components/Items/Fact';
+import FactList from '../../Components/Containers/FactList';
+import Fact from '../../Components/Items/Fact';
 
 
 describe('FactList', () => {

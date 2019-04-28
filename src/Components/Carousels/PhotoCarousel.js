@@ -20,7 +20,7 @@ export default class Carousel extends Component {
           });
         })
         .catch(error => {
-          console.log('Error fetching and parsing Photographs data', error);
+          console.log('Error fetching and parsing data');
         });
     }
 

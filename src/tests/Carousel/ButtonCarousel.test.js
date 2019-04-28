@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Link } from 'react-router-dom';
 import { MemoryRouter } from 'react-router';
-import ButtonCarousel from '../Components/Carousels/ButtonCarousel';
+import ButtonCarousel from '../../Components/Carousels/ButtonCarousel';
 
 it('renders multiple buttons', () => {
 	const buttons = [

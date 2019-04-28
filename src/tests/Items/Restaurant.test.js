@@ -1,8 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Link } from 'react-router-dom';
-import { MemoryRouter } from 'react-router';
-import Restaurant from '../Components/Items/Restaurant';
+import Restaurant from '../../Components/Items/Restaurant';
 
 it('renders a restaurant component', () => {
   const tree = renderer.create(<Restaurant 

@@ -36,7 +36,7 @@ export default class BuyRoute extends Component {
           });
         })
         .catch(error => {
-          console.log('Error fetching and parsing Photographs data', error);
+          console.log('Error fetching and parsing data');
         });
     }
 
@@ -52,8 +52,8 @@ export default class BuyRoute extends Component {
 						<h2>United States Dollars</h2>
 						<div className="usd">
 							<form className="results" onSubmit={this.handleSubmit}>
-								<input type="text" value={value} onChange={this.handleChange} /><br/>
-								<input type="submit" value="Submit" />
+								<input className="currencyValue" type="text" value={value} onChange={this.handleChange} /><br/>
+								<input className="currencySubmit" type="submit" value="Submit" />
 							</form>
 						</div>
 						</div>

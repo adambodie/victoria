@@ -23,7 +23,7 @@ export default class Header extends Component {
 			<div>
 				<div className="header">
 					<nav className="navbar navbar-expand-md navbar-dark bg-dark">
-						<a className="navbar-brand">Adam's Black Ball</a>
+						<Link to="/" className="navbar-brand">Adam's Black Ball</Link>
 						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 							<span className="navbar-toggler-icon"></span>
 						</button>

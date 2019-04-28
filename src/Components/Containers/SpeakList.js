@@ -35,7 +35,7 @@ export default class SpeakList extends Component {
 			<form onSubmit={this.handleSubmit}>
 				<h1 className='keyboard-enter'>{text}</h1>
 				<div className="keys">
-					{buttons.map((x, index) => <input onClick={this.handleChange} type='submit' value={x} key={index}/>)}
+					{buttons.map((x, index) => <input className={`button-${index}`} onClick={this.handleChange} type='submit' value={x} key={index}/>)}
 				</div>
 			</form>
 		)

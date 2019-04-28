@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow, mount, render } from 'enzyme';
-import Footer from '../Components/Footer';
+import { mount } from 'enzyme';
+import Footer from '../../Components/Footer';
 
 describe('Footer', () => {
 	const wrapper = mount(<Footer />);

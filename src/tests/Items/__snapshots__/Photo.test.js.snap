@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a fact 1`] = `
+<div>
+  <img
+    alt="Victoria"
+    src="https://victoria.bodiewebdesign.com/Images/25_o.jpg"
+  />
+  <h3>
+    Victoria
+  </h3>
+</div>
+`;
