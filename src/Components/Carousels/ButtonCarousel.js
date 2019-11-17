@@ -1,25 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ButtonList from '../Containers/ButtonList';
 import '../../Styles/Footer.css';
+import { connect } from 'react-redux';
 
-export default class ButtonCarousel extends Component {
-	
-	constructor() {
-		super();
-		this.state = {
-			buttons: [
-				{ 'link' : '/visit', 'name' : 'camera'},
-				{ 'link' : '/eat', 'name' : 'cutlery' },
-				{ 'link' : '/learn', 'name' : 'graduation-cap' },
-				{ 'link' : '/buy', 'name' : 'usd'},
-				{ 'link' : '/speak', 'name' : 'bullhorn'},
-			]
-		}
-	}	
-	render() {
-			return (
-			<ButtonList data={this.state.buttons} />
-			)
-		
-	}
-}
+const mapStateToProps = state => {
+	return { links: state.links };
+};
+
+const ButtonCarousel = ({links}) => <ButtonList data={links} />
+
+export default connect(mapStateToProps)(ButtonCarousel)

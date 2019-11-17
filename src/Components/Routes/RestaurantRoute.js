@@ -1,32 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../../Styles/Eat.css';
 import RestaurantList from '../Containers/RestaurantList';
-import axios from 'axios';
+import { connect } from 'react-redux';
 
-export default class RestaurantRoute extends Component {
-	constructor() {
-		super();
-		this.state = {
-			restaurants: []
-		}
-	}
-	componentDidMount() {
-		axios.get(`https://victoria.bodiewebdesign.com/static/data/restaurants.json`)
-		.then(response => {
-			this.setState({
-				restaurants: response.data
-			});
-		})
-		.catch(error => {
-			console.log('Error fetching and parsing data');
-			});
-		}
-	render() {
-		const { restaurants } = this.state;
-		return (
-			<div className="restaurants">
-				<RestaurantList data={restaurants} />
-			</div>
-		)
-	}
-}
+const mapStateToProps = state => {
+	return { restaurants: state.restaurants };
+};
+
+const RestaurantRoute = ({ restaurants }) => (
+	<div className="restaurants">
+		<RestaurantList data={restaurants} />
+	</div>
+)
+
+export default connect(mapStateToProps)(RestaurantRoute)

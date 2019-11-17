@@ -1,32 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../../Styles/Home.css';
 import HomeList from '../Containers/HomeList';
-import axios from 'axios';
+import { connect } from 'react-redux';
 
-export default class HomeRoute extends Component {
-	constructor() {
-		super();
-		this.state = {
-				features: []
-			}
-		}
-		componentDidMount() {
-			axios.get('https://victoria.bodiewebdesign.com/static/data/features.json')
-				.then(response => {
-					this.setState({
-						features: response.data
-					});
-				})
-				.catch(error => {
-					console.log('Error fetching and parsing data');
-				});
-		}
-		render(){
-			const { features } = this.state;
-			return (
-				<div className="home">
-					<HomeList data={features} />
-				</div>
-			);
-		}
-}
+const mapStateToProps = state => {
+	return { features: state.features };
+};
+
+const HomeRoute = ({features}) => (
+	<div className="home">
+		<HomeList data={features} />
+	</div>
+);
+
+export default connect(mapStateToProps)(HomeRoute)

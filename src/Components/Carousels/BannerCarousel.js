@@ -1,31 +1,11 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 import BannerList from '../Containers/BannerList';
 import '../../Styles/Slick.css';
+import { connect } from 'react-redux';
 
-export default class BannerCarousel extends Component {
-	constructor() {
-		super();
-		this.state = {
-			banners: [],
-		};
-	}
-  	componentDidMount() {
-		axios.get(`https://victoria.bodiewebdesign.com/static/data/banner.json`)
-		.then(response => {
-			this.setState({
-				banners: response.data
-			});
-		})
-		.catch(error => {
-			console.log('Error fetching and parsing data');
-			});
-		}
-    
-	render() {
-		const { banners } = this.state;
-		return (
-			<BannerList data={banners} />
-		);
-	}
-}
+const mapStateToProps = state => {
+	return { banners: state.banners };
+};
+const BannerCarousel = ({banners}) => <BannerList data={banners} />
+
+export default connect(mapStateToProps)(BannerCarousel)
