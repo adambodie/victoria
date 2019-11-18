@@ -23,7 +23,7 @@
 }
 
 .usd {
-	background-image: url('https://victoria.bodiewebdesign.com/Images/us50.jpg');
+	background-image: url('/../assets/us50.jpg');
 	background-position: center;
 	width: 335px;
 	height: 205px;
@@ -33,7 +33,7 @@
 }
 
 .cad {
-	background-image: url('https://victoria.bodiewebdesign.com/Images/canada50.jpg');
+	background-image: url('/../assets/canada50.jpg');
 	background-position: center;
 	display: flex;
 	width: 335px;

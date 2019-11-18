@@ -1,131 +1,127 @@
 .factRoute {
 	margin-bottom: 110px;
 }
+.factButtons {
+	display: flex;
+	justify-content: center;
+}
 
-.factButton {
-	display: block;
-	margin: 0 auto;
-	background-color: rgba(0,0,0,0.7);
+.factButtons button {
+	font-size: 1.5em;
+	min-width: 80px;
+	padding: 5px;
+	background: rgba(0,0,0,0.8);
 	color: white;
-	padding: 20px;
-}
-.factButton:hover {
-	background-color: rgba(0,0,0,1);
+	margin: 20px;
 }
 
-.photo-overlay {
-	opacity: 0;
-	transition: opacity .5s;
-}
-.photo-overlay:hover {
-	opacity: 1;
-}
-
-.slide .photo-overlay,
-.slide img {
-	transition: transform .6s ease-out;
-}
-
-.slide .photo-overlay {
-	transform: translateX(-100%);
-}
-
-.slide:hover .photo-overlay {
-	transform: translateX(0);
-}
-
-.slide:hover img {
-	transform: translateX(100%); 
-}
-
-.photo-overlay h3 {
-	font-size: 0.8em;
-	line-height: 1.25em;
-	margin-top: .85em;
-	margin-bottom: .5em;
-}
-
-
-.photo-container {
-	text-align: center;
-}
-
-.photo {
-	position: relative;
-	line-height: 0;
-	margin-bottom: 2em;
-	overflow: hidden;
-}
-.slide img {
-	width: 300px;
-	height: 200px;
-	
-}
-.photo-container img {
- 	max-width: 100%;
-}
 .facts {
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
-/* ---- Photo Overlay ---- */
 
-.photo-overlay {
-	color: #fff;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0; 
-	left: 0;
-	padding-left: 20px;
-	padding-right: 20px;
-	display: flex; /* For centering text inside .photo-overlay */
+
+.view {
+	width: 300px;
+	height: 200px;
+    margin: 10px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+.view .mask, .view .content {
+	width: 300px;
+	height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+	position: relative;
+	width: 300px;
+	height: 200px;
+}
+.view h2 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+	font-size: 17px;
+	padding: 20px;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
 
-.slide .photo-overlay {
+.view-transform img{
+    transition: all 0.5s ease-out;
 	opacity: 1;
-	background: black;
+}
+.view-transform .mask { 
+	background-color: rgba(40,48,98,0.9);
+    transform: rotate(0deg) scale(1);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+    transform: translateY(-200px) rotate(180deg);
+}
+.view-transform h2{
+    transform: translateY(-200px);
+	transition: all 0.2s ease-in-out;
+}
+
+.view-transform:hover img{
+    transform: rotate(720deg) scale(0);
+	opacity: 0;
+}
+.view-transform:hover .mask { 
+	opacity: 1;  
+    transform: translateY(0px) rotate(0deg);
+    transition-delay: 0.4s;
+}
+.view-transform:hover h2 { 
+    transform: translateY(0px);
+	transition-delay: 0.7s;
 }
 
 @media (min-width: 480px) {
-	.title {
+	.view {
+		width: 400px;
+		height: 267px;
+		margin: 10px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		box-shadow: 1px 1px 2px #e6e6e6;
+		cursor: default;
+	}
+	.view .mask, .view .content {
+		width: 400px;
+		height: 267px;
 		position: absolute;
-		left: 0;
-		top: 100px;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		display: flex; /* For centering text inside .photo-overlay */
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		overflow: hidden;
+		top: 0;
+		left: 0
 	}
-	.title h1 {
-	    text-align: center;
-		font-size: 3em;
-	}		
+	.view img {
+		display: block;
+		position: relative;
+		width: 400px;
+		height: 267px;
+	}
 }
 
 
-@media (min-width: 0) and (max-width: 768px) {
-	.photo-container {
-		width: 80%;
-	}
-}
+
 @media (min-width: 769px) {
-	.slide img {
-		width: 600px;
-		height: 400px;
-	}
-	.photo-overlay h3 {
-		font-size: 1em;
-	}
-	.photo-container {
-		width: 40%;
-	}	
+
 }

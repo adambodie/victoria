@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Fact = ({name}) => (
-	<div className='photo slide'>
+	<div className='view view-transform'>
 		<img src={'../assets/fact.jpg'} alt='Did You Know?'/>
-		<div className='photo-overlay'>
-			<h3>{name}</h3> 
+		<div className='mask'>
+			<h2>{name}</h2> 
 		</div>
 	</div>
 )

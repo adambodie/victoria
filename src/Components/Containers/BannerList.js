@@ -25,7 +25,7 @@ const BannerList = ({data}) => (
 				)}
 			</Slider>
 		</div>
-		<div className='title'>
+		<div className='banner-title'>
 			<h1>Port Angeles to Victoria</h1>
 			<h1>See Adam's Black Ball Trip</h1>
 		</div>

@@ -1,3 +1,6 @@
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
+
 export const BUTTONS = [
     'ʔ', 'a', 'c', 'c̕', 'č', 'č̕','e', 'ə', 'h', 'i', 'k', 'kʷ', 'k̕ʷ', 'l', 
     'ɬ', 'ƛ̕', 'm', 'm̕', 'n', 'n̕', 'ŋ', 'ŋ̕','p', 'p̕', 'q', 'q̕', 'qʷ', 'q̕ʷ', 
