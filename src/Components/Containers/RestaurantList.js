@@ -9,11 +9,8 @@ const RestaurantList = ({ data }) => (
 				<Restaurant 
 					title={x.title} 
 					image={x.image} 
-					addressOne={x.address.one} 
-					addressTwo={x.address.two}
-					paragraphOne={x.paragraph.one}
-					paragraphTwo={x.paragraph.two}
-					paragraphThree={x.paragraph.three}
+					address={x.address} 
+					paragraph={x.paragraph}
 					/>
 			</div>
 		)}

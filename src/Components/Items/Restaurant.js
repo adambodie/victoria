@@ -1,19 +1,16 @@
 import React from 'react'
 
-const Restaurant = ({title, image, addressOne, addressTwo, paragraphOne, paragraphTwo, paragraphThree}) => (
+const Restaurant = ({title, image, address, paragraph}) => (
 	<div className='restaurant'>
 		<h2 className='restaurantTitle'>{title}</h2>
 		<div className='restaurantImage'>
 			<img src={`../assets/${image}.jpg`} alt={title} className='img-fluid'/>
 			<div className='address'>
-				<p>{addressOne}</p>
-				<p>{addressTwo}</p>
+				{address.map((x, index) => <p key={index}>{x}</p>)}
 			</div>
 		</div>
 		<div className='paragraph'>
-			<p>{paragraphOne}</p>
-			<p>{paragraphTwo}</p>
-			<p>{paragraphThree}</p>
+			{paragraph.map((x, index) =><p key={index}>{x}</p>)}
 		</div>
 	</div>
 )
