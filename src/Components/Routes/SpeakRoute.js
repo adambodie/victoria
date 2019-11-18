@@ -1,12 +1,12 @@
-import React from 'react';
-import SpeakList from '../containers/SpeakList';
-import '../../styles/Speak.css';
+import React from 'react'
+import { connect } from 'react-redux'
 
-import { connect } from 'react-redux';
+import SpeakList from '../containers/SpeakList'
+import '../../styles/Speak.css'
 
 const mapStateToProps = state => {
-	return { buttons: state.buttons };
-};
+	return { buttons: state.buttons }
+}
 
 const SpeakRoute = ({ buttons }) => (
 	<div className='keyboard'>
@@ -15,5 +15,4 @@ const SpeakRoute = ({ buttons }) => (
 	</div>
 )
 	
-
 export default connect(mapStateToProps)(SpeakRoute)

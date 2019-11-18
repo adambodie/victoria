@@ -15,7 +15,7 @@ exports[`renders a restaurant component 1`] = `
     <img
       alt="Restaurant Name"
       className="img-fluid"
-      src="https://victoria.bodiewebdesign.com/Images/restaurant image.jpg"
+      src="../assets/restaurant image.jpg"
     />
     <div
       className="address"

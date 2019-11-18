@@ -1,11 +1,11 @@
-import React from 'react';
-import ButtonList from '../containers/ButtonList';
-import '../../styles/Footer.css';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
+import ButtonList from '../containers/ButtonList'
+import '../../styles/Footer.css'
 
 const mapStateToProps = state => {
-	return { links: state.links };
-};
+	return { links: state.links }
+}
 
 const ButtonCarousel = ({links}) => <ButtonList data={links} />
 

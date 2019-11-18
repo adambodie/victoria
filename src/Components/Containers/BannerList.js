@@ -1,6 +1,6 @@
-import React from 'react';
-import Slider from 'react-slick';
-import Banner from '../items/Banner';
+import React from 'react'
+import Slider from 'react-slick'
+import Banner from '../items/Banner'
 
 const settings = {
 	dots: true,
@@ -12,11 +12,11 @@ const settings = {
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	fade: true
-};
+}
 
 const BannerList = ({data}) => (
-	<div className="banner">
-		<div className="bannerSlick">
+	<div className='banner'>
+		<div className='bannerSlick'>
 			<Slider ref={c => this.slider = c } {...settings}>
 				{data.map((x, index) =>
 					<div key={index}>
@@ -25,11 +25,11 @@ const BannerList = ({data}) => (
 				)}
 			</Slider>
 		</div>
-		<div className="title">
+		<div className='title'>
 			<h1>Port Angeles to Victoria</h1>
 			<h1>See Adam's Black Ball Trip</h1>
 		</div>
 	</div>
-);
+)
 
-export default BannerList;
+export default BannerList

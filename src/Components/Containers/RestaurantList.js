@@ -1,6 +1,5 @@
-import React from 'react';
-import Restaurant from '../items/Restaurant';
-
+import React from 'react'
+import Restaurant from '../items/Restaurant'
 
 const RestaurantList = ({ data }) => (
 	<div>
@@ -19,7 +18,6 @@ const RestaurantList = ({ data }) => (
 			</div>
 		)}
 	</div>
-);
+)
 
-
-export default RestaurantList;
+export default RestaurantList

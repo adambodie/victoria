@@ -1,11 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders a banner component 1`] = `
-<div>
-  <img
-    alt="Alt"
-    className="img-fluid"
-    src="https://victoria.bodiewebdesign.com/Images/Name.jpg"
-  />
-</div>
+<img
+  alt="Alt"
+  className="img-fluid"
+  src="../assets/Name.jpg"
+/>
 `;

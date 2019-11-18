@@ -6,7 +6,7 @@ exports[`renders a fact 1`] = `
 >
   <img
     alt="Did You Know?"
-    src="https://victoria.bodiewebdesign.com/Images/fact.jpg"
+    src="../assets/fact.jpg"
   />
   <div
     className="photo-overlay"

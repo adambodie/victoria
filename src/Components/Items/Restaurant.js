@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const Restaurant = ({title, image, addressOne, addressTwo, paragraphOne, paragraphTwo, paragraphThree}) => (
 	<div className='restaurant'>
-		<h2 className="restaurantTitle">{title}</h2>
-		<div className="restaurantImage">
-			<img src={`https://victoria.bodiewebdesign.com/Images/${image}.jpg`} alt={title} className="img-fluid"/>
-			<div className="address">
+		<h2 className='restaurantTitle'>{title}</h2>
+		<div className='restaurantImage'>
+			<img src={`../assets/${image}.jpg`} alt={title} className='img-fluid'/>
+			<div className='address'>
 				<p>{addressOne}</p>
 				<p>{addressTwo}</p>
 			</div>
@@ -16,6 +16,6 @@ const Restaurant = ({title, image, addressOne, addressTwo, paragraphOne, paragra
 			<p>{paragraphThree}</p>
 		</div>
 	</div>
-);
+)
 
-export default Restaurant;
+export default Restaurant

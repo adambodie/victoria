@@ -1,8 +1,8 @@
-import React from 'react';
-import Button from '../items/Button';
+import React from 'react'
+import Button from '../items/Button'
 
 const ButtonList = ({data}) => (
-	<div className="buttons">
+	<div className='buttons'>
 		{data.map((x, index) =>
 			index !== 0 && (
 			<div key={index}>
@@ -10,7 +10,6 @@ const ButtonList = ({data}) => (
 			</div>)
 		)}
 	</div>
-);
+)
 
-
-export default ButtonList;
+export default ButtonList
