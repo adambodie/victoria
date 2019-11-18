@@ -22,11 +22,12 @@ export const PAGES = [
 ]
 
 export const LINKS = [
-    { 'link' : '/visit', 'name' : 'camera'},
-    { 'link' : '/eat', 'name' : 'cutlery' },
-    { 'link' : '/learn', 'name' : 'graduation-cap' },
-    { 'link' : '/buy', 'name' : 'usd'},
-    { 'link' : '/speak', 'name' : 'bullhorn'}
+	{ 'link' : '/', 'name' : 'Home' },
+    { 'link' : '/visit', 'logo' : 'camera', 'name' : 'Visit' },
+    { 'link' : '/eat', 'logo' : 'cutlery', 'name' : 'Eat' },
+    { 'link' : '/learn', 'logo' : 'graduation-cap', 'name' : 'Learn' },
+    { 'link' : '/buy', 'logo' : 'usd', 'name' : 'Buy'},
+    { 'link' : '/speak', 'logo' : 'bullhorn', 'name' : 'Speak'}
 ]
 
 export const BANNERS = [

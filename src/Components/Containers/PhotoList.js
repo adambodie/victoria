@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Photo from '../Items/Photo';
+import Photo from '../items/Photo';
 
 const settings = {
 	dots: true,

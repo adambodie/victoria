@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Styles/Learn.css';
-import FactList from '../Containers/FactList';
+import '../../styles/Learn.css';
+import FactList from '../containers/FactList';
 import { connect } from 'react-redux'
 
 const mapStateToProps = state => {

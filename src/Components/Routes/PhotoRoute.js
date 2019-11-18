@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import PhotoCarousel from '../Carousels/PhotoCarousel';
-import '../../Styles/Tabs.css';
+import PhotoCarousel from '../carousels/PhotoCarousel';
+import '../../styles/Tabs.css';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {

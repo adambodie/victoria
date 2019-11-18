@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Banner from '../Items/Banner';
+import Banner from '../items/Banner';
 
 const settings = {
 	dots: true,

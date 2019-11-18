@@ -1,6 +1,6 @@
 import React from 'react';
-import SpeakList from '../Containers/SpeakList';
-import '../../Styles/Speak.css';
+import SpeakList from '../containers/SpeakList';
+import '../../styles/Speak.css';
 
 import { connect } from 'react-redux';
 

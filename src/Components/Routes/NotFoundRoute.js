@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/NotFound.css';
+import '../../styles/NotFound.css';
 
 const NotFoundRoute = ({ location }) => (
 	<div className="notFound">

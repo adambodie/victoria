@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Styles/Home.css';
-import HomeList from '../Containers/HomeList';
+import '../../styles/Home.css';
+import HomeList from '../containers/HomeList';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {

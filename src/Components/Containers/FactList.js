@@ -1,5 +1,5 @@
 import React from 'react';
-import Fact from '../Items/Fact';
+import Fact from '../items/Fact';
 
 const FactList = ({ data }) => (
 	<div className="facts">

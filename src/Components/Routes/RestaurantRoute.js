@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../Styles/Eat.css';
-import RestaurantList from '../Containers/RestaurantList';
+import '../../styles/Eat.css';
+import RestaurantList from '../containers/RestaurantList';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {

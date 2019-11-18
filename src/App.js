@@ -4,17 +4,17 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import './Styles/App.css';
-import Header from './Components/Header';
-import HomeRoute from './Components/Routes/HomeRoute';
-import PhotoRoute from './Components/Routes/PhotoRoute';
-import FactRoute from './Components/Routes/FactRoute';
-import BuyRoute from './Components/Routes/BuyRoute';
-import RestaurantRoute from './Components/Routes/RestaurantRoute';
-import SpeakRoute from './Components/Routes/SpeakRoute';
-import NotFoundRoute from './Components/Routes/NotFoundRoute';
-import Footer from './Components/Footer';
-import ButtonCarousel from './Components/Carousels/ButtonCarousel.js';
+import './styles/App.css';
+import Header from './components/Header';
+import HomeRoute from './components/routes/HomeRoute';
+import PhotoRoute from './components/routes/PhotoRoute';
+import FactRoute from './components/routes/FactRoute';
+import BuyRoute from './components/routes/BuyRoute';
+import RestaurantRoute from './components/routes/RestaurantRoute';
+import SpeakRoute from './components/routes/SpeakRoute';
+import NotFoundRoute from './components/routes/NotFoundRoute';
+import Footer from './components/Footer';
+import ButtonCarousel from './components/carousels/ButtonCarousel.js';
 
 class App extends Component {
   render() {

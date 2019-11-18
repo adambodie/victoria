@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import PhotoList from '../Containers/PhotoList';
-import '../../Styles/Slick.css';
+import PhotoList from '../containers/PhotoList';
+import '../../styles/Slick.css';
 
 
 export default class Carousel extends Component {

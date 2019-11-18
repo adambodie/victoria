@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import '../../Styles/Buy.css';
+import '../../styles/Buy.css';
 
 export default class BuyRoute extends Component {
 	

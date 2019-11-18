@@ -5,7 +5,7 @@ export const buttons = (state = BUTTONS) => state
 export const pages = (state = PAGES) => state
 export const links = (state = LINKS) => state
 export const banners = (state = BANNERS) => state
-export const features = (state = FEATURES) => state
+export const features = (state = SHUFFLE(FEATURES)) => state
 export const restaurants = (state = RESTAURANTS) => state
 export const facts = (state = SHUFFLE(FACTS)) => state
 

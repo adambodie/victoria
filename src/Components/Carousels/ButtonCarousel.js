@@ -1,6 +1,6 @@
 import React from 'react';
-import ButtonList from '../Containers/ButtonList';
-import '../../Styles/Footer.css';
+import ButtonList from '../containers/ButtonList';
+import '../../styles/Footer.css';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
