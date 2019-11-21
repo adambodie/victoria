@@ -3,14 +3,13 @@ import renderer from 'react-test-renderer';
 import Restaurant from '../../Components/Items/Restaurant';
 
 it('renders a restaurant component', () => {
-  const tree = renderer.create(<Restaurant 
+	const tree = renderer.create(
+					<Restaurant 
 						title="Restaurant Name" 
 						image="restaurant image"
-						addressOne="123 Fake Street" 
-						addressTwo="Springfield, USA"
-						paragraphOne="One paragraph"
-						paragraphTwo="Two paragraph"
-						paragraphThree="Three paragraph"
-						/>).toJSON();
-  expect(tree).toMatchSnapshot();
+						address={["123 Fake Street", "Springfield, USA"]}
+						paragraph={["One paragraph", "Two paragraph", "Three paragraph"]}
+						/>
+						).toJSON();
+	expect(tree).toMatchSnapshot();
 });

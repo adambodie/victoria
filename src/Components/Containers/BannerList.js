@@ -15,21 +15,9 @@ const settings = {
 }
 
 const BannerList = ({data}) => (
-	<div className='banner'>
-		<div className='bannerSlick'>
-			<Slider ref={c => this.slider = c } {...settings}>
-				{data.map((x, index) =>
-					<div key={index}>
-						<Banner name={x.name} alt={x.alt} />
-					</div>
-				)}
-			</Slider>
-		</div>
-		<div className='banner-title'>
-			<h1>Port Angeles to Victoria</h1>
-			<h1>See Adam's Black Ball Trip</h1>
-		</div>
-	</div>
+	<Slider ref={c => this.slider = c } {...settings}>
+		{data.map((x, index) => <Banner name={x.name} alt={x.alt} key={index}/>)}
+	</Slider>
 )
 
 export default BannerList

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonList renders buttons 1`] = `
+<div
+  className="buttons"
+>
+  <a
+    href="/buy"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-Port Angeles fa-2x homeButtons"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#EE3A43",
+          "color": "black",
+          "justifyContent": "center",
+        }
+      }
+    />
+  </a>
+  <a
+    href="/visit"
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-Bremerton fa-2x homeButtons"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#EE3A43",
+          "color": "black",
+          "justifyContent": "center",
+        }
+      }
+    />
+  </a>
+</div>
+`;

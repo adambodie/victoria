@@ -3,12 +3,7 @@ import Button from '../items/Button'
 
 const ButtonList = ({data}) => (
 	<div className='buttons'>
-		{data.map((x, index) =>
-			index !== 0 && (
-			<div key={index}>
-				<Button link={x.link} name={x.logo} />
-			</div>)
-		)}
+		{data.map((x, index) => index !== 0 && (<Button link={x.link} name={x.logo} key={index} />))}
 	</div>
 )
 

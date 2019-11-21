@@ -12,12 +12,7 @@ const settings = {
 
 const PhotoList = ({ data, begin, end }) => (
 	<Slider ref={c => this.slider = c } {...settings}>
-		{data.map((x, index) =>
-			<div key={x.id}>
-				<Photo id={x.id} title={x.title}  />
-			</div>
-			).filter((x, index) => index >= begin && index <= end)
-		}
+		{data.map((x) =><Photo id={x.id} key={x.id} title={x.title}  />).filter((x, index) => index >= begin && index <= end)}
 	</Slider>
 )
 

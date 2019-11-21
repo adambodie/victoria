@@ -9,6 +9,7 @@ const mapStateToProps = state => {
 
 const RestaurantRoute = ({ restaurants }) => (
 	<div className='restaurants'>
+		<h1 className='pageTitle'>Restaurant Reviews</h1>
 		<RestaurantList data={restaurants} />
 	</div>
 )

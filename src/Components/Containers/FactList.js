@@ -18,12 +18,7 @@ const FactList = ({ data, counter, increment, decrement }) => (
 		<button onClick={increment}>More</button>
 	</div>
 	<div className='facts'>
-		{data.map((x, index) => 
-			<div key={index}>
-				<Fact name={x}/>
-			</div>
-			).filter((x, index) => index < counter)
-		}
+		{data.map((x, index) => <Fact name={x} key={index}/>).filter((x, index) => index < counter)}
 	</div>
 	</React.Fragment>
 )
