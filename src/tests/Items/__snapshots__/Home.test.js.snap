@@ -6,7 +6,7 @@ exports[`renders a feature on the home page 1`] = `
 >
   <img
     alt="Port Angeles"
-    src="../assets/port-angeles.jpg"
+    src="..//assets/port-angeles.jpg"
   />
   <div
     className="home-overlay"

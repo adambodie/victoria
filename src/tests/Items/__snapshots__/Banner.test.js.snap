@@ -4,6 +4,6 @@ exports[`renders a banner component 1`] = `
 <img
   alt="Alt"
   className="img-fluid"
-  src="../assets/Name.jpg"
+  src="..//assets/Name.jpg"
 />
 `;

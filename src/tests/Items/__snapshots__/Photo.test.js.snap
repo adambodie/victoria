@@ -4,7 +4,7 @@ exports[`renders a fact 1`] = `
 <div>
   <img
     alt="Victoria"
-    src="../assets/photos/25_o.jpg"
+    src="..//assets/photos/25_o.jpg"
   />
   <h3>
     Victoria
